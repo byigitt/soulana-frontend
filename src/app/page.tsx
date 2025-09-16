@@ -13,7 +13,7 @@ import {
 } from "@/components/sections/landing";
 import { motion } from "framer-motion";
 
-// Container animation variant
+// Konteyner animasyon ayarları
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -25,13 +25,13 @@ const containerVariants = {
   }
 };
 
-// Child animation variant
+// Alt bileşen animasyon ayarları
 const childVariants = {
-  hidden: { 
+  hidden: {
     opacity: 0,
-    y: 20 
+    y: 20
   },
-  visible: { 
+  visible: {
     opacity: 1,
     y: 0,
     transition: {
@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-rose-50 via-white to-rose-50/50 dark:from-red-950 dark:via-black dark:to-red-950/50">
       <Navbar />
-      <motion.main 
+      <motion.main
         className="container mx-auto px-4 py-20"
         variants={containerVariants}
         initial="hidden"
@@ -55,42 +55,42 @@ export default function Home() {
           <HeroSection />
         </motion.div>
 
-        <motion.div 
+        <motion.div
           variants={childVariants}
           viewport={{ once: true }}
         >
           <StatsSection />
         </motion.div>
 
-        <motion.div 
+        <motion.div
           variants={childVariants}
           viewport={{ once: true }}
         >
           <VideoSection />
         </motion.div>
 
-        <motion.div 
+        <motion.div
           variants={childVariants}
           viewport={{ once: true }}
         >
           <PartnerSection />
         </motion.div>
 
-        <motion.div 
+        <motion.div
           variants={childVariants}
           viewport={{ once: true }}
         >
           <Testimonials />
         </motion.div>
 
-        <motion.div 
+        <motion.div
           variants={childVariants}
           viewport={{ once: true }}
         >
           <ImpactStories />
         </motion.div>
 
-        <motion.div 
+        <motion.div
           variants={childVariants}
           viewport={{ once: true }}
         >

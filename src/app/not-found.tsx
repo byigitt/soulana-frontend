@@ -21,10 +21,10 @@ export default function NotFound() {
 
           <div className="space-y-4">
             <h2 className="text-3xl font-bold text-red-950 dark:text-rose-50">
-              Page Not Found
+              Sayfayı Bulamadık
             </h2>
             <p className="text-lg text-red-800/80 dark:text-rose-100/80 max-w-md mx-auto">
-              The page you&apos;re looking for doesn&apos;t exist or has been moved.
+              Aradığınız sayfa burada yok ya da başka bir yere taşınmış olabilir.
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export default function NotFound() {
             >
               <Link href="/">
                 <Home className="h-4 w-4" />
-                Go Home
+                Ana sayfaya dön
               </Link>
             </Button>
             <Button
@@ -46,10 +46,10 @@ export default function NotFound() {
               <button 
                 type="button"
                 onClick={() => window.history.back()}
-                aria-label="Go back to previous page"
+                aria-label="Önceki sayfaya dön"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Go Back
+                Önceki sayfaya dön
               </button>
             </Button>
           </div>

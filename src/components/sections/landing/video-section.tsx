@@ -17,17 +17,17 @@ export const VideoSection = () => {
   };
 
   if (!isMounted) {
-    return null; // Return null on server-side
+    return null;
   }
 
   return (
     <div className="mt-32 text-center" id="how-it-works">
       <div className="max-w-3xl mx-auto mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50 mb-6">
-          See How It Works
+          Nasıl İşlediğini Gör
         </h2>
         <p className="text-xl text-red-800/80 dark:text-rose-100/80">
-          Watch how our platform leverages Solana&apos;s blockchain technology to make charitable giving more efficient, transparent, and impactful than ever before.
+          Solana&apos;nın blokzincir teknolojisini nasıl kullandığımızı izleyin; bağış sürecini her zamankinden daha hızlı, şeffaf ve etkili hale getiriyoruz.
         </p>
       </div>
 
@@ -45,7 +45,7 @@ export const VideoSection = () => {
                 className="relative z-10 gap-2 bg-white/80 dark:bg-white/10 backdrop-blur-sm border-white/50 dark:border-white/20 text-red-700 dark:text-white hover:bg-white/90 dark:hover:bg-white/20 hover:border-white/60 dark:hover:border-white/30 group-hover:scale-110 transition-all duration-300 shadow-lg"
               >
                 <Play className="h-6 w-6" />
-                Watch Demo
+                Tanıtımı İzle
               </Button>
             </>
           ) : (
@@ -56,9 +56,9 @@ export const VideoSection = () => {
               muted
               controls
               src="/demo.mp4"
-              aria-label="Platform demonstration video"
+              aria-label="Platform tanıtım videosu"
             >
-              Your browser does not support the video tag.
+              Tarayıcınız video etiketini desteklemiyor.
             </video>
           )}
         </div>
@@ -67,26 +67,26 @@ export const VideoSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-4xl mx-auto mb-8">
         <div className="p-6 text-left rounded-xl bg-white/50 dark:bg-black/20 border border-red-100/50 dark:border-red-900/50 backdrop-blur-sm transition-all duration-300 hover:bg-white/70 dark:hover:bg-black/30">
           <h3 className="text-lg font-semibold text-red-950 dark:text-rose-50 mb-2">
-            Instant Transactions
+            Anında İşlemler
           </h3>
           <p className="text-red-800/80 dark:text-rose-100/80">
-            Experience lightning-fast donations with Solana&apos;s sub-second finality.
+            Solana&apos;nın saniyeden kısa sürede kesinleşen yapısıyla bağışlarınız ışık hızında ulaşsın.
           </p>
         </div>
         <div className="p-6 text-left rounded-xl bg-white/50 dark:bg-black/20 border border-red-100/50 dark:border-red-900/50 backdrop-blur-sm transition-all duration-300 hover:bg-white/70 dark:hover:bg-black/30">
           <h3 className="text-lg font-semibold text-red-950 dark:text-rose-50 mb-2">
-            Complete Transparency
+            Tam Şeffaflık
           </h3>
           <p className="text-red-800/80 dark:text-rose-100/80">
-            Track every donation on the blockchain with full visibility and verification.
+            Her bağışı blokzincir üzerinde uçtan uca izleyin; görünürlük ve doğrulama daima elinizin altında.
           </p>
         </div>
         <div className="p-6 text-left rounded-xl bg-white/50 dark:bg-black/20 border border-red-100/50 dark:border-red-900/50 backdrop-blur-sm transition-all duration-300 hover:bg-white/70 dark:hover:bg-black/30">
           <h3 className="text-lg font-semibold text-red-950 dark:text-rose-50 mb-2">
-            Minimal Fees
+            En Düşük Masraflar
           </h3>
           <p className="text-red-800/80 dark:text-rose-100/80">
-            More of your donation goes to the cause with near-zero transaction costs.
+            Neredeyse sıfır işlem maliyeti sayesinde bağışınızın çok daha fazlası ihtiyaç sahiplerine ulaşır.
           </p>
         </div>
       </div>

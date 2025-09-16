@@ -9,25 +9,25 @@ const testimonials = [
   {
     id: 1,
     name: "Sarah Johnson",
-    role: "Nonprofit Director",
+    role: "Sivil toplum kuruluşu yöneticisi",
     image: "/images/landing/sarah.jpg",
-    content: "The Solana-powered donation platform has revolutionized how we receive support. Instant transactions and minimal fees mean more resources go directly to our cause.",
+    content: "Solana destekli bağış platformu, desteği alış biçimimizi baştan aşağı değiştirdi. Anında işlemler ve düşük masraflar sayesinde kaynaklarımız doğrudan amacımıza gidiyor.",
     rating: 5
   },
   {
     id: 2,
     name: "Michael Chen",
-    role: "Regular Donor",
+    role: "Düzenli bağışçı",
     image: "/images/landing/michael.jpg",
-    content: "I love how transparent and fast the donation process is. Being able to track my contributions on the blockchain gives me complete confidence in where my money goes.",
+    content: "Bağış sürecinin ne kadar şeffaf ve hızlı olmasına bayılıyorum. Katkılarımı blokzincirde takip edebilmek, paramın nereye gittiğinden tamamen emin olmamı sağlıyor.",
     rating: 5
   },
   {
     id: 3,
     name: "Emily Rodriguez",
-    role: "Charity Organizer",
+    role: "Yardım organizasyonu sorumlusu",
     image: "/images/landing/emily.jpg",
-    content: "The platform's user-friendly interface combined with Solana's speed has made fundraising so much more efficient. Our donors appreciate the seamless experience.",
+    content: "Platformun kullanıcı dostu arayüzü Solana'nın hızıyla birleşince bağış toplamak çok daha verimli oldu. Bağışçılarımız bu kesintisiz deneyimi çok takdir ediyor.",
     rating: 5
   }
 ];
@@ -70,10 +70,10 @@ export const Testimonials = () => {
     <section className="mt-12" ref={testimonialsRef}>
       <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50">
-          What People Say
+          İnsanlar Ne Diyor
         </h2>
         <p className="mt-4 text-xl text-red-800/80 dark:text-rose-100/80 max-w-2xl mx-auto">
-          Hear from our community of donors and organizations
+          Bağışçılarımızın ve kurum ortaklarımızın görüşlerini okuyun
         </p>
       </div>
 

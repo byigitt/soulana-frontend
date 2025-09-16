@@ -63,23 +63,20 @@ export const PartnerSection = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-2xl font-bold text-red-950 dark:text-rose-50 animate-fade-in">
-            Trusted by individuals and teams at the world&apos;s boldest companies
+            Dünyanın en cesur şirketlerinde bireylerin ve ekiplerin güvendiği platform
           </h2>
         </div>
 
-        {/* Primary Marquee container with gradient masks */}
         <div className="relative flex overflow-x-hidden hover:[&>*]:pause">
-          {/* Gradient masks - hidden on mobile */}
           <div className="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-white dark:from-[#080101] to-transparent z-10 hidden md:block" />
           <div className="absolute inset-y-0 right-0 w-48 bg-gradient-to-l from-white dark:from-[#080101] to-transparent z-10 hidden md:block" />
-          {/* First marquee group */}
           <div className="animate-marquee whitespace-nowrap flex items-center">
             {partners.map((partner) => (
               <div key={partner.id} className="mx-8">
                 <div className="w-[150px] h-12 relative grayscale hover:grayscale-0 transition-all duration-300">
                   <Image
                     src={partner.logo}
-                    alt={`${partner.name} logo`}
+                    alt={`${partner.name} logosu`}
                     fill
                     sizes="(max-width: 768px) 100vw, 150px"
                     className="object-contain"
@@ -88,15 +85,13 @@ export const PartnerSection = () => {
               </div>
             ))}
           </div>
-
-          {/* Second marquee group (duplicate) */}
           <div className="animate-marquee2 whitespace-nowrap flex items-center absolute top-0">
             {partners.map((partner) => (
               <div key={`${partner.id}-duplicate`} className="mx-8">
                 <div className="w-[150px] h-12 relative grayscale hover:grayscale-0 transition-all duration-300">
                   <Image
                     src={partner.logo}
-                    alt={`${partner.name} logo`}
+                    alt={`${partner.name} logosu`}
                     fill
                     sizes="(max-width: 768px) 100vw, 150px"
                     className="object-contain"
