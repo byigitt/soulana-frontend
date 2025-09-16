@@ -3,6 +3,7 @@ FROM node:20-bullseye AS base
 WORKDIR /app
 ENV PNPM_HOME="/pnpm"
 ENV PATH=":/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib"
+ENV PYTHON=python3
 RUN corepack enable && corepack prepare pnpm@9.12.3 --activate
 
 FROM base AS deps

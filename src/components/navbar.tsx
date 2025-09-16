@@ -29,13 +29,7 @@ import { WalletButton } from "@/components/ui/wallet-button";
 
 const navigation = [
   {
-    name: "Ana Sayfa",
-    href: "/",
-    icon: Home,
-    description: "Bağış yapmanın geleceğine hoş geldiniz"
-  },
-  {
-    name: "Bağış Yap",
+    name: "Bağış",
     href: "/donate",
     icon: PiggyBank,
     description: "Bağış projelerimizi destekleyin"
@@ -272,7 +266,7 @@ export function Navbar() {
                     <Menu className="h-6 w-6 text-red-950 dark:text-rose-50" />
                   </button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-80 bg-white dark:bg-gray-900/95 p-0">
+                <SheetContent side="left" className="w-80 h-full overflow-y-auto bg-white dark:bg-gray-900/95 p-0">
                   <SheetHeader className="p-6 border-b border-red-100 dark:border-red-800/30">
                     <SheetTitle className="text-2xl font-bold text-red-950 dark:text-rose-50">
                       Menü
@@ -354,6 +348,7 @@ export function Navbar() {
             </button>
 
             <div className="flex items-center justify-end gap-3 justify-self-end">
+              <WalletButton className="h-10 px-4 text-sm shrink-0" />
               <ThemeToggle />
             </div>
           </div>
