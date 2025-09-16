@@ -3,30 +3,38 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     template: "%s | Soulana",
-    default: "Our Team",
+    default: "Ekibimiz",
   },
-  description: "Meet the passionate team behind Soulana. Learn about our experts and advisors driving blockchain innovation in charitable giving.",
-  keywords: ["team", "experts", "advisors", "blockchain", "charity", "careers"],
+  description:
+    "Soulana'nın arkasındaki tutkulu ekiple tanışın. Bağışta blokzincir inovasyonuna yön veren uzmanlarımızı ve danışmanlarımızı keşfedin.",
+  keywords: [
+    "ekip",
+    "uzmanlar",
+    "danışmanlar",
+    "blokzincir",
+    "bağış",
+    "kariyer",
+  ],
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://cyberia-frontend.vercel.app/team",
+    locale: "tr_TR",
+    url: "https://soulana.wiredium.com/team",
     siteName: "Soulana",
-    title: "Our Team | Soulana",
-    description: "Meet the passionate team behind Soulana.",
+    title: "Ekibimiz | Soulana",
+    description: "Soulana'nın arkasındaki tutkulu ekiple tanışın.",
     images: [
       {
         url: "/images/og/team.jpg",
         width: 1200,
         height: 630,
-        alt: "Soulana - Our Team",
+        alt: "Soulana - Ekibimiz",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Team | Soulana",
-    description: "Meet the passionate team behind Soulana.",
+    title: "Ekibimiz | Soulana",
+    description: "Soulana'nın arkasındaki tutkulu ekiple tanışın.",
     images: ["/images/og/team.jpg"],
     creator: "@Soulana",
   },

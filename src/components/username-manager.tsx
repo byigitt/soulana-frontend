@@ -38,14 +38,14 @@ export function UsernameManager({
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || "Failed to update username");
+        throw new Error(data.error || "Kullanıcı adı güncellenemedi");
       }
 
       onUsernameUpdate(data.user.username);
       setIsEditing(false);
-      toast.success("Username updated successfully!");
+      toast.success("Kullanıcı adı başarıyla güncellendi!");
     } catch (error) {
-      toast.error(error instanceof Error ? error.message : "Failed to update username");
+      toast.error(error instanceof Error ? error.message : "Kullanıcı adı güncellenemedi");
     } finally {
       setIsLoading(false);
     }
@@ -55,7 +55,7 @@ export function UsernameManager({
     return (
       <div className="flex items-center gap-2">
         <p className="text-sm text-red-800/60 dark:text-rose-100/60">
-          {currentUsername || "No username set"}
+          {currentUsername || "Kullanıcı adı belirlenmemiş"}
         </p>
         <Button
           variant="ghost"
@@ -75,9 +75,9 @@ export function UsernameManager({
         type="text"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        placeholder="Enter username"
+        placeholder="Kullanıcı adını girin"
         pattern="^[a-zA-Z0-9_-]{3,20}$"
-        title="Username must be 3-20 characters and can only contain letters, numbers, underscores, and hyphens"
+        title="Kullanıcı adı 3-20 karakter olmalı ve yalnızca harf, rakam, alt çizgi ve tire içerebilir"
         required
         className="max-w-[200px] bg-white/80 dark:bg-black/40"
         disabled={isLoading}
@@ -88,7 +88,7 @@ export function UsernameManager({
         disabled={isLoading}
         className="bg-red-600 hover:bg-red-700 text-white"
       >
-        {isLoading ? "Saving..." : "Save"}
+        {isLoading ? "Kaydediliyor..." : "Kaydet"}
       </Button>
       <Button
         type="button"
@@ -101,7 +101,7 @@ export function UsernameManager({
         disabled={isLoading}
         className="text-red-800/60 dark:text-rose-100/60"
       >
-        Cancel
+        İptal
       </Button>
     </form>
   );

@@ -35,21 +35,21 @@ export default function CookieSettingsPage() {
       <Navbar />
       <main className="container mx-auto px-4 py-20">
         <div className="max-w-3xl mx-auto mt-12">
-          <h1 className="text-4xl font-bold mb-8 text-red-950 dark:text-rose-50">Cookie Settings</h1>
+          <h1 className="text-4xl font-bold mb-8 text-red-950 dark:text-rose-50">Çerez Ayarları</h1>
           
           <div className="prose dark:prose-invert max-w-none">
             <p className="text-lg mb-6">
-              We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic.
-              Please select your cookie preferences below.
+              Tarama deneyiminizi iyileştirmek, kişiselleştirilmiş içerik sunmak ve trafiğimizi analiz etmek için çerezler kullanıyoruz.
+              Lütfen aşağıdan çerez tercihlerinizi seçin.
             </p>
 
             <div className="space-y-8">
-              {/* Necessary Cookies */}
+              
               <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
                 <div className="space-y-1">
-                  <h3 className="text-lg font-semibold">Necessary Cookies</h3>
+                  <h3 className="text-lg font-semibold">Zorunlu Çerezler</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    These cookies are required for basic site functionality and cannot be disabled.
+                    Bu çerezler temel site işlevi için gereklidir ve devre dışı bırakılamaz.
                   </p>
                 </div>
                 <Switch
@@ -59,12 +59,12 @@ export default function CookieSettingsPage() {
                 />
               </div>
 
-              {/* Analytics Cookies */}
+              
               <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
                 <div className="space-y-1">
-                  <h3 className="text-lg font-semibold">Analytics Cookies</h3>
+                  <h3 className="text-lg font-semibold">Analitik Çerezler</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Help us improve our website by collecting and reporting usage information.
+                    Kullanım bilgilerini toplayıp raporlayarak web sitemizi geliştirmemize yardımcı olur.
                   </p>
                 </div>
                 <Switch
@@ -74,12 +74,12 @@ export default function CookieSettingsPage() {
                 />
               </div>
 
-              {/* Marketing Cookies */}
+              
               <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
                 <div className="space-y-1">
-                  <h3 className="text-lg font-semibold">Marketing Cookies</h3>
+                  <h3 className="text-lg font-semibold">Pazarlama Çerezleri</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Used to track visitors across websites to display relevant advertisements.
+                    Ziyaretçileri web siteleri arasında takip ederek ilgili reklamları göstermemizi sağlar.
                   </p>
                 </div>
                 <Switch
@@ -89,12 +89,12 @@ export default function CookieSettingsPage() {
                 />
               </div>
 
-              {/* Preference Cookies */}
+              
               <div className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-900 rounded-lg">
                 <div className="space-y-1">
-                  <h3 className="text-lg font-semibold">Preference Cookies</h3>
+                  <h3 className="text-lg font-semibold">Tercih Çerezleri</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Allow the website to remember choices you make and provide enhanced functionality.
+                    Web sitesinin yaptığınız seçimleri hatırlamasını ve gelişmiş işlevsellik sunmasını sağlar.
                   </p>
                 </div>
                 <Switch
@@ -106,20 +106,20 @@ export default function CookieSettingsPage() {
             </div>
 
             <div className="mt-8">
-              <h2 className="text-2xl font-semibold mb-4">Additional Information</h2>
+              <h2 className="text-2xl font-semibold mb-4">Ek Bilgiler</h2>
               <p className="mb-4">
-                For more information about how we use cookies and your personal data, please see our{" "}
+                Çerezleri ve kişisel verilerinizi nasıl kullandığımız hakkında daha fazla bilgi için lütfen{" "}
                 <a href="/legal/privacy-policy" className="text-red-600 dark:text-red-400 hover:underline">
-                  Privacy Policy
+                  Gizlilik Politikamızı
                 </a>
                 .
               </p>
               <p>
-                If you have any questions about our cookie usage, please contact us at{" "}
+                Çerez kullanımımızla ilgili sorularınız varsa lütfen{" "}
                 <a href="mailto:privacy@soulana.org" className="text-red-600 dark:text-red-400 hover:underline">
                   privacy@soulana.org
                 </a>
-                .
+                adresinden bize ulaşın.
               </p>
             </div>
           </div>
@@ -128,4 +128,4 @@ export default function CookieSettingsPage() {
       <Footer />
     </div>
   );
-} 
+}

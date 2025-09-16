@@ -4,42 +4,42 @@ import { Shield, Lock, Eye, Key } from "lucide-react";
 const features = [
   {
     icon: Shield,
-    title: "Multi-Layer Protection",
-    description: "Advanced encryption and security protocols protect every transaction.",
+    title: "Çok Katmanlı Koruma",
+    description: "Her işlemi ileri seviye şifreleme ve güvenlik protokolleri korur.",
     details: [
-      "End-to-end encryption",
-      "Multi-signature wallets",
-      "Real-time monitoring"
+      "Uçtan uca şifreleme",
+      "Çok imzalı cüzdanlar",
+      "Gerçek zamanlı izleme"
     ]
   },
   {
     icon: Lock,
-    title: "Audit Safety",
-    description: "Audited and verified solana tunnels ensure safe fund distribution.",
+    title: "Denetim Güvencesi",
+    description: "Denetlenmiş ve doğrulanmış Solana tünelleri fonların güvenli dağıtımını sağlar.",
     details: [
-      "Regular security audits",
-      "Automated testing",
-      "Bug bounty program"
+      "Düzenli güvenlik denetimleri",
+      "Otomatik testler",
+      "Ödül avı programı"
     ]
   },
   {
     icon: Eye,
-    title: "Transaction Monitoring",
-    description: "24/7 monitoring system to detect and prevent suspicious activities.",
+    title: "İşlem İzleme",
+    description: "Şüpheli faaliyetleri tespit edip önlemek için 7/24 izleme sistemi.",
     details: [
-      "Real-time alerts",
-      "Fraud detection",
-      "Activity logging"
+      "Gerçek zamanlı uyarılar",
+      "Dolandırıcılık tespiti",
+      "Faaliyet kaydı"
     ]
   },
   {
     icon: Key,
-    title: "Access Control",
-    description: "Granular permissions and role-based access control.",
+    title: "Erişim Kontrolü",
+    description: "Detaylı yetkilendirmeler ve rol tabanlı erişim kontrolü.",
     details: [
-      "Role-based access",
-      "Two-factor authentication",
-      "Session management"
+      "Rol tabanlı erişim",
+      "İki faktörlü kimlik doğrulama",
+      "Oturum yönetimi"
     ]
   }
 ];
@@ -48,7 +48,7 @@ export const SecurityFeaturesSection = () => {
   return (
     <section className="mt-20">
       <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50 text-center mb-12">
-        Security Features
+        Güvenlik Özellikleri
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {features.map((feature) => (
@@ -76,4 +76,4 @@ export const SecurityFeaturesSection = () => {
       </div>
     </section>
   );
-}; 
+};

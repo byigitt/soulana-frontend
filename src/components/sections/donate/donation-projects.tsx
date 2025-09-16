@@ -71,7 +71,7 @@ const ProgressBadge = ({ progress }: { progress: number }) => {
   return (
     <div className={`rounded-full px-3 py-1 ${bgColor}`}>
       <span className={`text-sm font-medium ${textColor}`}>
-        {progress}% Funded
+        {progress}% Fonlandı
       </span>
     </div>
   );
@@ -83,22 +83,22 @@ const StatusBadge = ({ status }: { status: "started" | "completed" | "pending" |
     started: {
       bg: "bg-blue-100 dark:bg-blue-900/30",
       text: "text-blue-600 dark:text-blue-400",
-      label: "Started"
+      label: "Başladı"
     },
     completed: {
       bg: "bg-green-100 dark:bg-green-900/30",
       text: "text-green-600 dark:text-green-400",
-      label: "Completed"
+      label: "Tamamlandı"
     },
     pending: {
       bg: "bg-yellow-100 dark:bg-yellow-900/30",
       text: "text-yellow-600 dark:text-yellow-400",
-      label: "Pending"
+      label: "Beklemede"
     },
     failed: {
       bg: "bg-red-100 dark:bg-red-900/30",
       text: "text-red-600 dark:text-red-400",
-      label: "Failed"
+      label: "Başarısız"
     }
   };
 
@@ -117,7 +117,7 @@ const StatusBadge = ({ status }: { status: "started" | "completed" | "pending" |
 const NewBadge = () => (
   <div className="rounded-full px-3 py-1 bg-green-100 dark:bg-green-900/30">
     <span className="text-sm font-medium text-green-600 dark:text-green-400">
-      New
+      Yeni
     </span>
   </div>
 );
@@ -125,7 +125,7 @@ const NewBadge = () => (
 const UrgentBadge = () => (
   <div className="rounded-full px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30">
     <span className="text-sm font-medium text-yellow-600 dark:text-yellow-400">
-      Urgent
+      Acil
     </span>
   </div>
 );
@@ -134,7 +134,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: "EduChain Scholarships",
-    description: "Scholarship support for students seeking blockchain technology education.",
+    description: "Blokzincir teknolojisi eğitimi almak isteyen öğrencilere burs desteği.",
     image: "https://i.ibb.co/x81s9mN/educhainscholar.png",
     target: "100 SOL",
     raised: "45 SOL",
@@ -145,7 +145,7 @@ const projects: Project[] = [
   {
     id: 2,
     title: "GreenSol Reforestation",
-    description: "Support reforestation efforts to combat climate change.",
+    description: "İklim değişikliğiyle mücadele eden ağaçlandırma çalışmalarını destekleyin.",
     image: "https://i.ibb.co/7GHVvwP/greensolrefores.png",
     target: "200 SOL",
     raised: "45 SOL",
@@ -210,7 +210,7 @@ export function DonationProjects() {
 
   const handleDonate = async (projectId: number) => {
     if (!connected || !publicKey) {
-      toast.error("Please connect your wallet first");
+      toast.error("Lütfen önce cüzdanınızı bağlayın");
       return;
     }
 
@@ -218,12 +218,12 @@ export function DonationProjects() {
     const project = projects.find(p => p.id === projectId);
     
     if (!project) {
-      toast.error("Project not found");
+      toast.error("Proje bulunamadı");
       return;
     }
 
     if (donationAmount < project.minDonation) {
-      toast.error(`Minimum donation is ${project.minDonation} SOL`);
+      toast.error(`Minimum bağış ${project.minDonation} SOL`);
       return;
     }
 
@@ -231,7 +231,7 @@ export function DonationProjects() {
       setLoading(prev => ({ ...prev, [projectId]: true }));
 
       if (balance === null || balance < donationAmount) {
-        throw new Error(`Insufficient balance. You need at least ${donationAmount} SOL`);
+        throw new Error(`Yetersiz bakiye. En az ${donationAmount} SOL gerekiyor`);
       }
 
       // Create transaction
@@ -249,7 +249,7 @@ export function DonationProjects() {
 
       try {
         if (!window.solana) {
-          throw new Error('Solana wallet not found');
+          throw new Error('Solana cüzdanı bulunamadı');
         }
         const signedTransaction = await window.solana.signTransaction(transaction);
         
@@ -257,7 +257,7 @@ export function DonationProjects() {
           signedTransaction.serialize()
         );
 
-        toast.info("Transaction sent! Waiting for confirmation...");
+        toast.info("İşlem gönderildi! Onay bekleniyor...");
 
         // Create initial donation record
         const donationData = {
@@ -288,7 +288,7 @@ export function DonationProjects() {
           );
           localStorage.setItem('donations', JSON.stringify(updatedTransactionsFailed));
           window.dispatchEvent(new CustomEvent('newDonation', { detail: updatedTransactionsFailed }));
-          throw new Error("Transaction failed to confirm");
+          throw new Error("İşlem onaylanamadı");
         }
 
         // Update transaction status to completed
@@ -315,12 +315,12 @@ export function DonationProjects() {
         });
 
         if (!response.ok) {
-          throw new Error('Failed to store donation');
+          throw new Error('Bağış kaydedilemedi');
         }
 
         const { tokenAmount } = await response.json();
         toast.success(
-          `Successfully donated ${donationAmount} SOL to ${project.title}! You earned ${tokenAmount} CCT tokens!`
+          `${project.title} projesine ${donationAmount} SOL bağışladınız! ${tokenAmount} CCT token kazandınız!`
         );
 
         // Refresh balances
@@ -329,7 +329,7 @@ export function DonationProjects() {
 
       } catch (error) {
         console.error("Transaction error:", error);
-        throw new Error("Failed to sign or send transaction");
+        throw new Error("İşlem imzalanamadı veya gönderilemedi");
       }
 
     } catch (error) {
@@ -337,7 +337,7 @@ export function DonationProjects() {
       if (error instanceof Error) {
         toast.error(error.message);
       } else {
-        toast.error("Failed to process donation");
+        toast.error("Bağış işlenemedi");
       }
     } finally {
       setLoading(prev => ({ ...prev, [projectId]: false }));
@@ -345,22 +345,22 @@ export function DonationProjects() {
   };
 
   const getButtonText = (projectId: number, connected: boolean, loading: boolean, balance: number | null): string => {
-    if (loading) return "Processing...";
-    if (!connected) return "Connect Wallet";
-    if (balance === null) return "Loading Balance...";
+    if (loading) return "İşleniyor...";
+    if (!connected) return "Cüzdanı Bağla";
+    if (balance === null) return "Bakiye Yükleniyor...";
     const amount = donationAmounts[projectId] || 0;
-    if (balance < amount) return "Insufficient Balance";
-    return "Donate Now";
+    if (balance < amount) return "Yetersiz Bakiye";
+    return "Hemen Bağış Yap";
   };
 
   return (
     <section className="mt-10 container mx-auto px-4">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-red-950 dark:text-rose-50 text-center mb-4">
-          Donate to Projects
+          Projeler İçin Bağış Yap
         </h1>
         <p className="text-red-800/80 dark:text-rose-100/80 text-center mb-6">
-          Choose a project to support and make your impact
+          Desteklemek için bir proje seç ve etkini göster
         </p>
         
         {/* Wallet Connection Section */}
@@ -371,10 +371,10 @@ export function DonationProjects() {
               {/* Balance Information */}
               <div className="p-3 bg-red-50 dark:bg-red-900/30 rounded-lg">
                 <p className="text-sm font-medium text-red-800/80 dark:text-rose-100/80">
-                  Balance: {balance !== null ? `${balance.toFixed(4)} SOL` : "Loading..."}
+                  Bakiye: {balance !== null ? `${balance.toFixed(4)} SOL` : "Yükleniyor..."}
                 </p>
                 <p className="text-xs text-red-600/60 dark:text-rose-200/60">
-                  Min donation: 0.001 SOL
+                  Minimum bağış: 0.001 SOL
                 </p>
               </div>
             </div>
@@ -422,7 +422,7 @@ export function DonationProjects() {
 
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
-                        <span className="text-red-800/60 dark:text-rose-100/60">Raised</span>
+                        <span className="text-red-800/60 dark:text-rose-100/60">Toplanan</span>
                         <span className="font-medium text-red-950 dark:text-rose-50">{project.raised}</span>
                       </div>
                       <div className="h-2 bg-red-100 dark:bg-red-950/50 rounded-full overflow-hidden">
@@ -432,7 +432,7 @@ export function DonationProjects() {
                         />
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span className="text-red-800/60 dark:text-rose-100/60">Target</span>
+                        <span className="text-red-800/60 dark:text-rose-100/60">Hedef</span>
                         <span className="font-medium text-red-950 dark:text-rose-50">{project.target}</span>
                       </div>
                     </div>
@@ -446,10 +446,10 @@ export function DonationProjects() {
                           value={donationAmounts[project.id] || project.minDonation}
                           onChange={(e) => handleAmountChange(project.id, e.target.value)}
                           className="w-full"
-                          placeholder="Amount in SOL"
+                          placeholder="SOL cinsinden tutar"
                         />
                         <p className="mt-1 text-xs text-red-800/60 dark:text-rose-100/60">
-                          Minimum donation: {project.minDonation} SOL
+                          Minimum bağış: {project.minDonation} SOL
                         </p>
                       </div>
                       <Button
@@ -460,7 +460,7 @@ export function DonationProjects() {
                         {loading[project.id] ? (
                           <>
                             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                            Processing...
+                            İşleniyor...
                           </>
                         ) : (
                           <>

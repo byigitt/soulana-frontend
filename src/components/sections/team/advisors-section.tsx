@@ -5,9 +5,9 @@ const advisors = [
   {
     id: 1,
     name: "Anatoly Yakovenko",
-    role: "The Inventor of Speed",
+    role: "Hızın Mucidi",
     image: "/images/advisors/Anatoly_Yakovenko.jpg",
-    bio: "Leading researcher in blockchain technology and social impact.",
+    bio: "Blockchain teknolojisi ve sosyal etki alanında öncü bir araştırmacı.",
     social: {
       twitter: "https://twitter.com/aeyakovenko?lang=en",
       linkedin: "https://www.linkedin.com/in/anatoly-yakovenko"
@@ -16,9 +16,9 @@ const advisors = [
   {
     id: 2,
     name: "Veli Uysal",
-    role: "Turkey Rust Community Owner",
+    role: "Türkiye Rust Topluluğu Sahibi",
     image: "/images/advisors/Veli_Uysal.jpg",
-    bio: "The man who increased the number of crabs in Turkey. 🦀🦀🦀",
+    bio: "Türkiye'de yengeçlerin sayısını artıran kişi. 🦀🦀🦀",
     social: {
       twitter: "https://twitter.com/0xVeliUysal",
       linkedin: "https://tr.linkedin.com/in/veliuysal"
@@ -31,10 +31,10 @@ export const AdvisorsSection = () => {
     <section className="mt-32">
       <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50">
-          Our Advisors
+          Danışmanlarımız
         </h2>
         <p className="mt-4 text-xl text-red-800/80 dark:text-rose-100/80 max-w-2xl mx-auto">
-          Industry experts guiding our mission and strategy
+          Misyonumuzu ve stratejimizi şekillendiren sektör uzmanları
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

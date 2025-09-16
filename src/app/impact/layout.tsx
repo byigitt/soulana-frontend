@@ -3,30 +3,40 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     template: "%s | Soulana",
-    default: "Our Impact",
+    default: "Etkimiz",
   },
-  description: "See the real-world impact of blockchain-powered charitable giving. Explore success stories and global reach metrics.",
-  keywords: ["impact", "charity", "blockchain", "donation", "success stories", "metrics"],
+  description:
+    "Blokzincir destekli bağışların gerçek dünya etkisini görün. Başarı hikâyelerini ve küresel erişim metriklerini keşfedin.",
+  keywords: [
+    "etki",
+    "yardım",
+    "blokzincir",
+    "bağış",
+    "başarı hikayeleri",
+    "metrikler",
+  ],
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://cyberia-frontend.vercel.app/impact",
+    locale: "tr_TR",
+    url: "https://soulana.wiredium.com/impact",
     siteName: "Soulana",
-    title: "Our Impact | Soulana",
-    description: "See the real-world impact of blockchain-powered charitable giving.",
+    title: "Etkimiz | Soulana",
+    description:
+      "Blokzincir destekli bağışların gerçek dünya etkisini görün.",
     images: [
       {
         url: "/images/og/impact.jpg",
         width: 1200,
         height: 630,
-        alt: "Soulana - Our Impact",
+        alt: "Soulana - Etkimiz",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Impact | Soulana",
-    description: "See the real-world impact of blockchain-powered charitable giving.",
+    title: "Etkimiz | Soulana",
+    description:
+      "Blokzincir destekli bağışların gerçek dünya etkisini görün.",
     images: ["/images/og/impact.jpg"],
     creator: "@Soulana",
   },
@@ -38,4 +48,4 @@ export default function ImpactLayout({
   children: React.ReactNode;
 }) {
   return <>{children}</>;
-} 
+}

@@ -7,14 +7,22 @@ import { WalletProvider } from "@/contexts/wallet-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cyberia-frontend.vercel.app"),
+  metadataBase: new URL("https://soulana.wiredium.com"),
   title: {
     template: "%s | Soulana",
-    default: "Soulana - Blockchain-Powered Charitable Giving",
+    default: "Soulana - Blokzincir Destekli Bağış Deneyimi",
   },
-  description: "Transform charitable giving with blockchain technology. Make secure, transparent donations and track your impact in real-time.",
-  keywords: ["charity", "blockchain", "donation", "solana", "transparency", "giving"],
-  authors: [{ name: "Soulana Team" }],
+  description:
+    "Bağış deneyimini blokzincir teknolojisiyle dönüştürün. Güvenli ve şeffaf bağışlar yapın, etkinizi anlık olarak takip edin.",
+  keywords: [
+    "bağış",
+    "blokzincir",
+    "solana",
+    "şeffaflık",
+    "toplumsal etki",
+    "yardım",
+  ],
+  authors: [{ name: "Soulana Ekibi" }],
   creator: "Soulana",
   publisher: "Soulana",
   formatDetection: {
@@ -24,11 +32,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://cyberia-frontend.vercel.app",
+    locale: "tr_TR",
+    url: "https://soulana.wiredium.com",
     siteName: "Soulana",
-    title: "Soulana - Blockchain-Powered Charitable Giving",
-    description: "Transform charitable giving with blockchain technology. Make secure, transparent donations and track your impact in real-time.",
+    title: "Soulana - Blokzincir Destekli Bağış Deneyimi",
+    description:
+      "Bağış deneyimini blokzincir teknolojisiyle dönüştürün. Güvenli ve şeffaf bağışlar yapın, etkinizi anlık olarak takip edin.",
     images: [
       {
         url: "/images/og/default.jpg",
@@ -40,8 +49,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Soulana - Blockchain-Powered Charitable Giving",
-    description: "Transform charitable giving with blockchain technology. Make secure, transparent donations and track your impact in real-time.",
+    title: "Soulana - Blokzincir Destekli Bağış Deneyimi",
+    description:
+      "Bağış deneyimini blokzincir teknolojisiyle dönüştürün. Güvenli ve şeffaf bağışlar yapın, etkinizi anlık olarak takip edin.",
     images: ["/images/og/default.jpg"],
     creator: "@Soulana",
   },
@@ -73,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="tr" suppressHydrationWarning>
       <body className={inter.className}>
         <WalletProvider>
           <ThemeProvider

@@ -3,23 +3,23 @@ import React from "react";
 const faqs = [
   {
     id: 1,
-    question: "How can I track my donation?",
-    answer: "All donations are tracked on the Solana blockchain. Once your donation is made, you'll receive a transaction ID that you can use to monitor its status and final destination."
+    question: "Bağışımı nasıl takip edebilirim?",
+    answer: "Tüm bağışlar Solana blok zincirinde takip edilir. Bağışınızı yaptıktan sonra durumunu ve nihai varış noktasını izlemek için kullanabileceğiniz bir işlem kimliği alırsınız."
   },
   {
     id: 2,
-    question: "What payment methods do you accept?",
-    answer: "We accept various cryptocurrencies on the Solana blockchain. You can also make donations using traditional payment methods which will be converted to crypto automatically."
+    question: "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+    answer: "Solana blok zincirinde çeşitli kripto para birimlerini kabul ediyoruz. Ayrıca kriptoya otomatik olarak dönüştürülecek geleneksel ödeme yöntemleriyle de bağış yapabilirsiniz."
   },
   {
     id: 3,
-    question: "How secure are my transactions?",
-    answer: "All transactions are secured by Solana's blockchain technology, utilizing military-grade encryption and decentralized verification systems."
+    question: "İşlemlerim ne kadar güvenli?",
+    answer: "Tüm işlemler Solana'nın blok zinciri teknolojisiyle, askeri düzeyde şifreleme ve merkeziyetsiz doğrulama sistemleri kullanılarak güvence altına alınır."
   },
   {
     id: 4,
-    question: "Can I get a tax receipt for my donation?",
-    answer: "Yes, we provide official tax receipts for all donations. These are automatically generated and sent to your registered email address."
+    question: "Bağışım için vergi makbuzu alabilir miyim?",
+    answer: "Evet, tüm bağışlar için resmi vergi makbuzları sağlıyoruz. Bunlar otomatik olarak oluşturulur ve kayıtlı e-posta adresinize gönderilir."
   }
 ];
 
@@ -27,7 +27,7 @@ export const FAQSection = () => {
   return (
     <section>
       <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50 mb-8">
-        Frequently Asked Questions
+        Sıkça Sorulan Sorular
       </h2>
       <div className="space-y-4">
         {faqs.map((faq) => (

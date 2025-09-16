@@ -4,11 +4,11 @@ export const HeroSection = () => {
   return (
     <div className="flex flex-col items-center text-center gap-8 max-w-3xl mx-auto animate-fade-in-up mt-16">
       <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-red-950 dark:text-rose-50 leading-tight">
-        Enterprise-Grade Security
+        Kurumsal Düzeyde Güvenlik
       </h1>
       <p className="text-xl text-red-800/80 dark:text-rose-100/80 max-w-2xl">
-        State-of-the-art protection for your donations with multi-layer security and compliance measures.
+        Çok katmanlı güvenlik ve uyum önlemleriyle bağışlarınız için son teknoloji koruma.
       </p>
     </div>
   );
-}; 
+};

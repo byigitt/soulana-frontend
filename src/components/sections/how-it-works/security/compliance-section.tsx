@@ -4,42 +4,42 @@ import { CheckCircle, FileCheck, Globe, ShieldCheck } from "lucide-react";
 const complianceItems = [
   {
     icon: CheckCircle,
-    title: "KYC/KYB Compliance",
-    description: "Comprehensive Know Your Customer and Know Your Business procedures.",
+    title: "KYC/KYB Uyumu",
+    description: "Müşterini Tanı ve İşini Tanı süreçlerinde kapsamlı uygulamalar.",
     details: [
-      "Identity verification",
-      "Transaction screening", 
-      "Risk assessment"
+      "Kimlik doğrulama",
+      "İşlem taraması",
+      "Risk değerlendirmesi"
     ]
   },
   {
     icon: ShieldCheck,
-    title: "Audit & Reporting",
-    description: "Regular audits and transparent reporting mechanisms.",
+    title: "Denetim ve Raporlama",
+    description: "Düzenli denetimler ve şeffaf raporlama mekanizmaları.",
     details: [
-      "External audits",
-      "Compliance reporting",
-      "Transparency logs"
+      "Harici denetimler",
+      "Uyum raporlaması",
+      "Şeffaflık kayıtları"
     ]
   },
   {
     icon: FileCheck,
-    title: "Regulatory Standards",
-    description: "Adherence to international financial regulations and standards.",
+    title: "Düzenleyici Standartlar",
+    description: "Uluslararası finansal düzenlemelere ve standartlara uyum.",
     details: [
-      "GDPR compliance",
-      "Financial regulations",
-      "Data protection"
+      "GDPR uyumluluğu",
+      "Finansal düzenlemeler",
+      "Veri koruma"
     ]
   },
   {
     icon: Globe,
-    title: "Global Compliance",
-    description: "Meeting regulatory requirements across multiple jurisdictions.",
+    title: "Küresel Uyum",
+    description: "Birden fazla yargı alanındaki düzenleyici gereklilikleri karşılıyoruz.",
     details: [
-      "Cross-border compliance",
-      "Regional regulations",
-      "International standards"
+      "Sınır ötesi uyum",
+      "Bölgesel düzenlemeler",
+      "Uluslararası standartlar"
     ]
   }
 ];
@@ -49,10 +49,10 @@ export const ComplianceSection = () => {
     <section className="mt-32">
       <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50">
-          Compliance & Standards
+          Uyum ve Standartlar
         </h2>
         <p className="mt-4 text-xl text-red-800/80 dark:text-rose-100/80 max-w-2xl mx-auto">
-          Meeting and exceeding global regulatory requirements
+          Küresel düzenleyici gereklilikleri karşılıyor ve aşıyoruz
         </p>
       </div>
 
@@ -82,4 +82,4 @@ export const ComplianceSection = () => {
       </div>
     </section>
   );
-}; 
+};

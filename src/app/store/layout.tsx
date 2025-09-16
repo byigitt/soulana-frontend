@@ -3,30 +3,40 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     template: "%s | Soulana",
-    default: "Store",
+    default: "Mağaza",
   },
-  description: "Shop exclusive Soulana merchandise and redeem your tokens for unique rewards and collectibles.",
-  keywords: ["store", "merchandise", "rewards", "tokens", "collectibles", "nft"],
+  description:
+    "Soulana'ya özel ürünleri keşfedin ve tokenlarınızı eşsiz ödüller ile koleksiyon ürünlerine dönüştürün.",
+  keywords: [
+    "mağaza",
+    "ürünler",
+    "ödüller",
+    "tokenlar",
+    "koleksiyon",
+    "nft",
+  ],
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://cyberia-frontend.vercel.app/store",
+    locale: "tr_TR",
+    url: "https://soulana.wiredium.com/store",
     siteName: "Soulana",
-    title: "Store | Soulana",
-    description: "Shop exclusive Soulana merchandise and redeem your tokens.",
+    title: "Mağaza | Soulana",
+    description:
+      "Soulana'ya özel ürünleri keşfedin ve tokenlarınızı ödüllere dönüştürün.",
     images: [
       {
         url: "/images/og/store.jpg",
         width: 1200,
         height: 630,
-        alt: "Soulana - Store",
+        alt: "Soulana - Mağaza",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Store | Soulana",
-    description: "Shop exclusive Soulana merchandise and redeem your tokens.",
+    title: "Mağaza | Soulana",
+    description:
+      "Soulana'ya özel ürünleri keşfedin ve tokenlarınızı ödüllere dönüştürün.",
     images: ["/images/og/store.jpg"],
     creator: "@Soulana",
   },
@@ -38,4 +48,4 @@ export default function StoreLayout({
   children: React.ReactNode;
 }) {
   return <>{children}</>;
-} 
+}

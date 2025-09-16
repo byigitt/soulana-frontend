@@ -41,20 +41,20 @@ const donationSteps = [
   {
     id: 'connect-wallet',
     icon: Wallet,
-    title: "Connect Your Wallet",
-    description: "Start by connecting your Solana wallet. We support Phantom, Solflare, and other major wallets."
+    title: "Cüzdanınızı Bağlayın",
+    description: "Solana cüzdanınızı bağlayarak başlayın. Phantom, Solflare ve diğer başlıca cüzdanları destekliyoruz."
   },
   {
     id: 'choose-amount',
     icon: Coins,
-    title: "Choose Amount",
-    description: "Select the project you want to support and enter your desired donation amount in SOL."
+    title: "Tutar Seçin",
+    description: "Desteklemek istediğiniz projeyi seçin ve bağışlamak istediğiniz SOL tutarını girin."
   },
   {
     id: 'confirm-transaction',
     icon: ShieldCheck,
-    title: "Confirm Transaction",
-    description: "Review the transaction details in your wallet and confirm to complete your donation."
+    title: "İşlemi Onaylayın",
+    description: "Cüzdanınızdaki işlem detaylarını inceleyip onaylayarak bağışınızı tamamlayın."
   }
 ];
 
@@ -75,10 +75,10 @@ export default function DonatePage() {
           variants={fadeIn}
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-red-950 dark:text-rose-50 mb-6 mt-16">
-            Make a Difference Today
+            Bugün Fark Yaratın
           </h1>
           <p className="text-xl text-red-800/80 dark:text-rose-100/80 max-w-2xl mx-auto">
-            Your contribution can change lives. Support our projects and help create a better future through blockchain-powered giving.
+            Katkınız hayatları değiştirebilir. Projelerimizi destekleyerek blokzincir destekli bağışlarla daha iyi bir gelecek yaratmamıza yardımcı olun.
           </p>
         </motion.div>
 
@@ -92,10 +92,10 @@ export default function DonatePage() {
             variants={fadeIn}
           >
             <h2 className="text-3xl font-bold text-red-950 dark:text-rose-50 mb-4">
-              How to Donate
+              Nasıl Bağış Yapılır
             </h2>
             <p className="text-red-800/80 dark:text-rose-100/80">
-              Follow these simple steps to make your donation
+              Bağışınızı yapmak için bu basit adımları izleyin
             </p>
           </motion.div>
 
@@ -152,9 +152,9 @@ export default function DonatePage() {
           viewport={{ once: true }}
         >
           {[
-            { title: "100%", subtitle: "Transparent Transactions" },
-            { title: "Instant", subtitle: "Transaction Processing" },
-            { title: "Secure", subtitle: "Blockchain Technology" }
+            { title: "100%", subtitle: "Şeffaf İşlemler" },
+            { title: "Anında", subtitle: "İşlem Gerçekleşmesi" },
+            { title: "Güvenli", subtitle: "Blokzincir Teknolojisi" }
           ].map((item) => (
             <motion.div 
               key={item.title}

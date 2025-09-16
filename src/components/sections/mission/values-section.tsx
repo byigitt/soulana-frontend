@@ -3,18 +3,18 @@ import { Heart, Globe, Users } from "lucide-react";
 const values = [
   {
     icon: Heart,
-    title: "Compassion",
-    description: "We believe in the power of empathy and collective action to create meaningful change in the world."
+    title: "Şefkat",
+    description: "Empatinin ve kolektif eylemin dünyada anlamlı değişim yaratma gücüne inanıyoruz."
   },
   {
     icon: Globe,
-    title: "Global Impact",
-    description: "Our platform connects donors with causes worldwide, breaking down barriers to global philanthropy."
+    title: "Küresel Etki",
+    description: "Platformumuz bağışçıları dünyanın dört bir yanındaki projelerle buluşturarak küresel hayırseverliğin önündeki engelleri kaldırır."
   },
   {
     icon: Users,
-    title: "Community",
-    description: "We foster a community of givers and organizations united by the desire to make a positive impact."
+    title: "Topluluk",
+    description: "Pozitif etki yaratma arzusu ile birleşen bağışçılar ve kuruluşlardan oluşan bir topluluğu destekliyoruz."
   }
 ];
 
@@ -22,7 +22,7 @@ export const ValuesSection = () => {
   return (
     <section className="mt-20">
       <h2 className="text-3xl font-bold text-red-950 dark:text-rose-50 text-center mb-12">
-        Our Core Values
+        Temel Değerlerimiz
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {values.map((value) => (
@@ -44,4 +44,5 @@ export const ValuesSection = () => {
       </div>
     </section>
   );
-}; 
+};
+

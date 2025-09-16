@@ -3,46 +3,46 @@ import { ArrowRight, Wallet, Search, Heart, ArrowRight as ArrowRightIcon } from 
 const steps = [
   {
     id: 1,
-    title: "Connect Your Wallet",
-    description: "Link your Solana wallet securely to start making instant donations.",
+    title: "Cüzdanınızı Bağlayın",
+    description: "Solana cüzdanınızı güvenle bağlayın ve anında bağış yapmaya başlayın.",
     icon: Wallet,
     details: [
-      "Support for multiple Solana wallets",
-      "One-click connection process", 
-      "Secure wallet integration",
+      "Birden fazla Solana cüzdanı desteği",
+      "Tek tıklamayla bağlantı süreci", 
+      "Güvenli cüzdan entegrasyonu",
     ]
   },
   {
     id: 2,
-    title: "Choose a Charity",
-    description: "Browse through our verified list of charitable organizations.",
+    title: "Bir Kuruluş Seçin",
+    description: "Onaylı yardım kuruluşu listemizde gezin.",
     icon: Search,
     details: [
-      "Filter by cause or location",
-      "View detailed charity profiles",
-      "Check impact metrics",
+      "Amaca veya konuma göre filtreleyin",
+      "Ayrıntılı kuruluş profillerini görüntüleyin",
+      "Etki metriklerini inceleyin",
     ]
   },
   {
     id: 3,
-    title: "Make Your Donation",
-    description: "Send your donation instantly using Solana's Blink technology.",
+    title: "Bağışınızı Yapın",
+    description: "Solana'nın Blink teknolojisiyle bağışınızı anında gönderin.",
     icon: Heart,
     details: [
-      "Instant transactions",
-      "Minimal gas fees",
-      "Multiple currency support",
+      "Anlık işlemler",
+      "Minimum işlem ücretleri",
+      "Birden fazla para birimi desteği",
     ]
   },
   {
     id: 4,
-    title: "Track Your Impact",
-    description: "Monitor how your donation is making a difference in real-time.",
+    title: "Etkinizi Takip Edin",
+    description: "Bağışınızın nasıl fark yarattığını gerçek zamanlı olarak izleyin.",
     icon: ArrowRightIcon,
     details: [
-      "Real-time transaction tracking",
-      "Impact visualization",
-      "Donation history",
+      "Gerçek zamanlı işlem takibi",
+      "Etki görselleştirmesi",
+      "Bağış geçmişi",
     ]
   },
 ];
@@ -61,7 +61,7 @@ export const StepsSection = () => {
                 <step.icon className="w-4 h-4 text-red-600 dark:text-red-400" />
               </div>
               <span className="text-base font-medium text-red-600 dark:text-red-400">
-                Step {step.id}
+                Adım {step.id}
               </span>
             </div>
             <h2 className="text-2xl font-bold text-red-950 dark:text-rose-50">
@@ -90,3 +90,4 @@ export const StepsSection = () => {
     </div>
   );
 };
+

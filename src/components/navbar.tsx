@@ -29,75 +29,75 @@ import { WalletButton } from "@/components/ui/wallet-button";
 
 const navigation = [
   { 
-    name: "Home",
+    name: "Ana Sayfa",
     href: "/",
     icon: Home,
-    description: "Welcome to the future of giving"
+    description: "Bağış yapmanın geleceğine hoş geldiniz"
   },
   { 
-    name: "Donate",
+    name: "Bağış Yap",
     href: "/donate",
     icon: PiggyBank,
-    description: "Support our charitable projects"
+    description: "Bağış projelerimizi destekleyin"
   },
   { 
-    name: "Mission",
+    name: "Misyon",
     href: "/mission",
     icon: Rocket,
-    description: "Transforming global philanthropy"
+    description: "Küresel hayırseverliği dönüştürüyoruz"
   },
   { 
-    name: "Impact",
+    name: "Etki",
     href: "/impact",
     icon: Heart,
-    description: "See our global impact"
+    description: "Küresel etkimize göz atın"
   },
   { 
-    name: "Team",
+    name: "Ekip",
     href: "/team",
     icon: Users,
-    description: "Meet our dedicated team"
+    description: "Adanmış ekibimizle tanışın"
   },
   { 
     name: "Token",
     href: "/token-rewards",
     icon: Coins,
-    description: "Earn tokens by donating"
+    description: "Bağış yaparak token kazanın"
   },
   {
-    name: "Technology",
+    name: "Teknoloji",
     href: "#",
     icon: Zap,
-    description: "Revolutionary blockchain solutions",
+    description: "Devrim niteliğindeki blok zinciri çözümleri",
     children: [
       { 
-        name: "Donation Process",
+        name: "Bağış Süreci",
         href: "/how-it-works/donation-process",
-        description: "Seamless, instant transactions"
+        description: "Sorunsuz ve anlık işlemler"
       },
       { 
-        name: "Solana Integration",
+        name: "Solana Entegrasyonu",
         href: "/how-it-works/solana-integration",
-        description: "Next-gen blockchain efficiency"
+        description: "Yeni nesil blok zinciri verimliliği"
       },
       { 
-        name: "Security",
+        name: "Güvenlik",
         href: "/how-it-works/security",
-        description: "Enterprise-grade protection"
+        description: "Kurumsal düzeyde koruma"
       },
     ],
   },
   { 
-    name: "Profile",
+    name: "Profil",
     href: "/profile",
     icon: Users,
-    description: "View your donations and tokens"
+    description: "Bağışlarınızı ve tokenlarınızı görüntüleyin"
   },
   { 
-    name: "Contact",
+    name: "İletişim",
     href: "/contact",
     icon: MessageCircle,
-    description: "Get in touch with us"
+    description: "Bizimle iletişime geçin"
   },
 ];
 
@@ -158,7 +158,6 @@ export function Navbar() {
       />
       <div className="container mx-auto px-4 relative">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo and Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             <button
               type="button"
@@ -168,7 +167,7 @@ export function Navbar() {
               <div className="relative w-10 h-10 flex items-center justify-center">
                 <Image 
                   src="/logo.svg" 
-                  alt="Logo" 
+                  alt="Soulana logosu" 
                   width={40}
                   height={40}
                   className="transition-transform duration-300 group-hover:scale-110 invert dark:invert-0 w-auto h-auto"
@@ -180,7 +179,6 @@ export function Navbar() {
               </span>
             </button>
 
-            {/* Desktop Navigation Items */}
             <div className="flex items-center gap-2">
               {navigation.map((item) => (
                 <div
@@ -264,14 +262,13 @@ export function Navbar() {
             </div>
           </div>
 
-          {/* Mobile Menu */}
           <div className="lg:hidden">
             <Sheet>
               <SheetTrigger asChild>
                 <button 
                   type="button"
                   className="p-2 hover:bg-red-50 dark:hover:bg-red-950/50 rounded-md transition-colors"
-                  aria-label="Open menu"
+                  aria-label="Menüyü aç"
                 >
                   <Menu className="h-6 w-6 text-red-950 dark:text-rose-50" />
                 </button>
@@ -279,7 +276,7 @@ export function Navbar() {
               <SheetContent side="left" className="w-80 bg-white dark:bg-gray-900/95 p-0">
                 <SheetHeader className="p-6 border-b border-red-100 dark:border-red-800/30">
                   <SheetTitle className="text-2xl font-bold text-red-950 dark:text-rose-50">
-                    Menu
+                    Menü
                   </SheetTitle>
                 </SheetHeader>
                 <div className="py-6 px-4 space-y-2">
@@ -335,7 +332,6 @@ export function Navbar() {
             </Sheet>
           </div>
 
-          {/* Mobile Logo (center) */}
           <div className="lg:hidden flex-1 flex justify-center">
             <button
               type="button"
@@ -345,7 +341,7 @@ export function Navbar() {
               <div className="relative w-10 h-10 flex items-center justify-center">
                 <Image 
                   src="/logo.svg" 
-                  alt="Logo" 
+                  alt="Soulana logosu" 
                   width={40}
                   height={40}
                   className="transition-transform duration-300 group-hover:scale-110 invert dark:invert-0 w-auto h-auto"
@@ -358,7 +354,6 @@ export function Navbar() {
             </button>
           </div>
 
-          {/* Right Side Actions */}
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <WalletButton />

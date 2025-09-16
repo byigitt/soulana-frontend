@@ -21,35 +21,35 @@ type FooterLinks = {
 
 const footerLinks: FooterLinks = {
   product: {
-    title: "Product",
+    title: "Ürün",
     links: [
-      { name: "Home", href: "/" },
-      { name: "Donation Process", href: "/how-it-works/donation-process" },
-      { name: "Solana Integration", href: "/how-it-works/solana-integration" },
-      { name: "Security", href: "/security" },
-      { name: "Impact", href: "/impact" },
+      { name: "Ana Sayfa", href: "/" },
+      { name: "Bağış Süreci", href: "/how-it-works/donation-process" },
+      { name: "Solana Entegrasyonu", href: "/how-it-works/solana-integration" },
+      { name: "Güvenlik", href: "/security" },
+      { name: "Etki", href: "/impact" },
     ],
   },
   support: {
-    title: "Support",
+    title: "Destek",
     links: [
-      { name: "Mission", href: "/mission" },
-      { name: "FAQ", href: "/contact" },
-      { name: "Offices", href: "/contact" },
-      { name: "Contact", href: "/contact" },
+      { name: "Misyon", href: "/mission" },
+      { name: "SSS", href: "/contact" },
+      { name: "Ofisler", href: "/contact" },
+      { name: "İletişim", href: "/contact" },
     ],
   },
   legal: {
-    title: "Legal",
+    title: "Yasal",
     links: [
-      { name: "Privacy Policy", href: "/legal/privacy-policy" },
-      { name: "Terms of Service", href: "/legal/terms-of-service" },
-      { name: "Cookie Settings", href: "/legal/cookie-settings" },
-      { name: "Accessibility", href: "/legal/accessibility" },
+      { name: "Gizlilik Politikası", href: "/legal/privacy-policy" },
+      { name: "Kullanım Şartları", href: "/legal/terms-of-service" },
+      { name: "Çerez Ayarları", href: "/legal/cookie-settings" },
+      { name: "Erişilebilirlik", href: "/legal/accessibility" },
     ],
   },
   social: {
-    title: "Social",
+    title: "Sosyal",
     links: [
       { name: "Twitter", href: "https://twitter.com", icon: Twitter },
       { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
@@ -105,32 +105,32 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-red-800/60 dark:text-rose-100/60">
-              © {year} Soulana. All rights reserved.
+              © {year} Soulana. Tüm hakları saklıdır.
             </p>
             <div className="flex flex-wrap items-center gap-4 text-sm">
               <Link
                 href="/legal/terms-of-service"
                 className="text-red-800/60 dark:text-rose-100/60 hover:text-red-600 dark:hover:text-red-400 transition-colors"
               >
-                Terms
+                Şartlar
               </Link>
               <Link
                 href="/legal/privacy-policy"
                 className="text-red-800/60 dark:text-rose-100/60 hover:text-red-600 dark:hover:text-red-400 transition-colors"
               >
-                Privacy
+                Gizlilik
               </Link>
               <Link
                 href="/legal/cookie-settings"
                 className="text-red-800/60 dark:text-rose-100/60 hover:text-red-600 dark:hover:text-red-400 transition-colors"
               >
-                Cookies
+                Çerezler
               </Link>
               <Link
                 href="/legal/accessibility"
                 className="text-red-800/60 dark:text-rose-100/60 hover:text-red-600 dark:hover:text-red-400 transition-colors"
               >
-                Accessibility
+                Erişilebilirlik
               </Link>
             </div>
           </div>

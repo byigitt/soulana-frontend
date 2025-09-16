@@ -1,24 +1,33 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Donation Process",
-  description: "Understand how the donation process works on Soulana - from selecting a cause to tracking your impact.",
-  keywords: ["donation process", "charitable giving", "blockchain donation", "transparency", "impact tracking"],
+  title: "Bağış Süreci",
+  description:
+    "Soulana'da bağış sürecinin nasıl işlediğini keşfedin; projeleri seçmekten etkinizi takip etmeye kadar tüm adımları öğrenin.",
+  keywords: [
+    "bağış süreci",
+    "yardımseverlik",
+    "blokzincir bağışı",
+    "şeffaflık",
+    "etki takibi",
+  ],
   openGraph: {
-    title: "Donation Process | Soulana",
-    description: "Understand how the donation process works on Soulana - from selecting a cause to tracking your impact.",
+    title: "Bağış Süreci | Soulana",
+    description:
+      "Soulana'da bağış sürecinin nasıl işlediğini keşfedin; projeleri seçmekten etkinizi takip etmeye kadar tüm adımları öğrenin.",
     images: [
       {
         url: "/images/og/donation-process.jpg",
         width: 1200,
         height: 630,
-        alt: "Soulana - Donation Process",
+        alt: "Soulana - Bağış Süreci",
       },
     ],
   },
   twitter: {
-    title: "Donation Process | Soulana",
-    description: "Understand how the donation process works on Soulana - from selecting a cause to tracking your impact.",
+    title: "Bağış Süreci | Soulana",
+    description:
+      "Soulana'da bağış sürecinin nasıl işlediğini keşfedin; projeleri seçmekten etkinizi takip etmeye kadar tüm adımları öğrenin.",
     images: ["/images/og/donation-process.jpg"],
   },
 };
@@ -29,4 +38,4 @@ export default function DonationProcessLayout({
   children: React.ReactNode;
 }) {
   return <>{children}</>;
-} 
+}

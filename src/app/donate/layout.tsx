@@ -3,30 +3,41 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     template: "%s | Soulana",
-    default: "Donate", 
+    default: "Bağış Yap",
   },
-  description: "Make a difference by donating to our Solana-powered charitable projects. Your contribution helps create positive change.",
-  keywords: ["donate", "charity", "blockchain", "donation", "giving", "solana", "cryptocurrency"],
+  description:
+    "Solana destekli yardım projelerimize bağış yaparak fark yaratın. Katkınız olumlu değişime güç verir.",
+  keywords: [
+    "bağış",
+    "yardım",
+    "blokzincir",
+    "bağış kampanyası",
+    "paylaşma",
+    "solana",
+    "kriptopara",
+  ],
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://cyberia-frontend.vercel.app/donate",
+    locale: "tr_TR",
+    url: "https://soulana.wiredium.com/donate",
     siteName: "Soulana",
-    title: "Donate | Soulana",
-    description: "Make a difference by donating to our Solana-powered charitable projects.",
+    title: "Bağış Yap | Soulana",
+    description:
+      "Solana destekli yardım projelerimize bağış yaparak fark yaratın.",
     images: [
       {
         url: "/images/og/donate.jpg",
         width: 1200,
         height: 630,
-        alt: "Soulana - Donate",
+        alt: "Soulana - Bağış Yap",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Donate | Soulana",
-    description: "Make a difference by donating to our Solana-powered charitable projects.",
+    title: "Bağış Yap | Soulana",
+    description:
+      "Solana destekli yardım projelerimize bağış yaparak fark yaratın.",
     images: ["/images/og/donate.jpg"],
     creator: "@Soulana",
   },

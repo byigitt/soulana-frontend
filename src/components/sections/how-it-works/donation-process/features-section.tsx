@@ -3,18 +3,18 @@ import { Shield, Clock, Heart } from "lucide-react";
 const features = [
   {
     icon: Shield,
-    title: "Secure & Transparent",
-    description: "Every transaction is recorded on the Solana blockchain, ensuring complete transparency and security."
+    title: "Güvenli ve Şeffaf",
+    description: "Her işlem Solana blokzincirine kaydedilir ve tam şeffaflık ile güvenliği garanti eder."
   },
   {
     icon: Clock,
-    title: "Lightning Fast",
-    description: "Experience instant donations with Solana Blink, no more waiting for days or paying high fees."
+    title: "Şimşek Hızında",
+    description: "Solana Blink ile anında bağış deneyimi yaşayın; günlerce beklemeye ya da yüksek ücretler ödemeye son."
   },
   {
     icon: Heart,
-    title: "Maximum Impact",
-    description: "Near-zero transaction fees mean more of your donation goes directly to the cause you care about."
+    title: "Maksimum Etki",
+    description: "Neredeyse sıfır olan işlem ücretleri, bağışınızın daha büyük bir kısmının doğrudan önemsediğiniz amaca gitmesi anlamına gelir."
   }
 ];
 

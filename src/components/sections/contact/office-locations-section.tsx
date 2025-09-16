@@ -32,7 +32,7 @@ export const OfficeLocationsSection = () => {
   return (
     <section className="mt-16">
       <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50 text-center mb-16">
-        Our Offices
+        Ofislerimiz
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {offices.map((office) => (

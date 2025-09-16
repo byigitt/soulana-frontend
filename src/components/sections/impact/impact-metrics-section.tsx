@@ -5,26 +5,26 @@ const metrics = [
   {
     icon: Wallet,
     value: "$10M+",
-    label: "Total Donations",
-    growth: "+127% this year"
+    label: "Toplam Bağış",
+    growth: "Bu yıl +%127 artış"
   },
   {
     icon: Users,
     value: "50K+",
-    label: "Active Donors",
-    growth: "+85% this year"
+    label: "Aktif Bağışçılar",
+    growth: "Bu yıl +%85 artış"
   },
   {
     icon: Heart,
     value: "200+",
-    label: "Causes Supported",
-    growth: "+63% this year"
+    label: "Desteklenen Projeler",
+    growth: "Bu yıl +%63 artış"
   },
   {
     icon: Globe,
     value: "45+",
-    label: "Countries Reached",
-    growth: "+92% this year"
+    label: "Ulaşılan Ülkeler",
+    growth: "Bu yıl +%92 artış"
   }
 ];
 

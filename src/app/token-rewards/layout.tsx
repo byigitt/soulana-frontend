@@ -3,30 +3,40 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     template: "%s | Soulana",
-    default: "Token Rewards",
+    default: "Token Ödülleri",
   },
-  description: "Learn about Soulana's token rewards program and how you can earn tokens through charitable giving.",
-  keywords: ["tokens", "rewards", "cryptocurrency", "blockchain", "charity", "earning"],
+  description:
+    "Soulana'nın token ödül programını ve bağış yaparak token kazanmanın yollarını keşfedin.",
+  keywords: [
+    "tokenlar",
+    "ödüller",
+    "kriptopara",
+    "blokzincir",
+    "bağış",
+    "kazanç",
+  ],
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://cyberia-frontend.vercel.app/token-rewards",
+    locale: "tr_TR",
+    url: "https://soulana.wiredium.com/token-rewards",
     siteName: "Soulana",
-    title: "Token Rewards | Soulana",
-    description: "Learn about Soulana's token rewards program.",
+    title: "Token Ödülleri | Soulana",
+    description:
+      "Soulana'nın token ödül programını keşfedin.",
     images: [
       {
         url: "/images/og/token-rewards.jpg",
         width: 1200,
         height: 630,
-        alt: "Soulana - Token Rewards",
+        alt: "Soulana - Token Ödülleri",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Token Rewards | Soulana",
-    description: "Learn about Soulana's token rewards program.",
+    title: "Token Ödülleri | Soulana",
+    description:
+      "Soulana'nın token ödül programını keşfedin.",
     images: ["/images/og/token-rewards.jpg"],
     creator: "@Soulana",
   },
@@ -38,4 +48,4 @@ export default function TokenRewardsLayout({
   children: React.ReactNode;
 }) {
   return <>{children}</>;
-} 
+}

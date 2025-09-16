@@ -3,32 +3,32 @@ import Image from "next/image";
 
 const features = [
   {
-    title: "Blink Technology",
-    description: "Solana's revolutionary Blink technology enables near-instant transaction finality.",
+    title: "Blink Teknolojisi",
+    description: "Solana'nın devrim niteliğindeki Blink teknolojisi işlemlerin neredeyse anında sonuçlanmasını sağlar.",
     details: [
-      "Sub-second confirmation times",
-      "Parallel transaction processing", 
-      "Scalable architecture"
+      "Bir saniyeden kısa onay süreleri",
+      "Paralel işlem işleme", 
+      "Ölçeklenebilir mimari"
     ],
     image: "/images/solana-integration/blinks.png"
   },
   {
-    title: "Solana Tunnels",
-    description: "Automated and transparent fund distribution through secure solana tunnels.",
+    title: "Solana Tünelleri",
+    description: "Güvenli Solana tünelleriyle otomatik ve şeffaf fon dağıtımı.",
     details: [
-      "Automated disbursement",
-      "Transparent tracking",
-      "Programmable logic"
+      "Otomatik fon dağıtımı",
+      "Şeffaf takip",
+      "Programlanabilir mantık"
     ], 
     image: "/images/solana-integration/solanawormhole.webp"
   },
   {
-    title: "Cross-Chain Bridge",
-    description: "Seamlessly accept donations from multiple blockchain networks.",
+    title: "Çapraz Zincir Köprüsü",
+    description: "Birden fazla blokzincir ağından bağışları sorunsuzca kabul et.",
     details: [
-      "Multi-chain support",
-      "Unified experience",
-      "Broad accessibility"
+      "Çoklu zincir desteği",
+      "Tekdüzen deneyim",
+      "Geniş erişilebilirlik"
     ],
     image: "/images/solana-integration/crosschainbridge.png"
   }
@@ -39,10 +39,10 @@ export const TechnologySection = () => {
     <section className="mt-32">
       <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50">
-          Advanced Technology Stack
+          Gelişmiş Teknoloji Altyapısı
         </h2>
         <p className="mt-4 text-xl text-red-800/80 dark:text-rose-100/80 max-w-2xl mx-auto">
-          Built on cutting-edge blockchain technology for maximum efficiency and security
+          Maksimum verimlilik ve güvenlik için son teknoloji blokzincir altyapısı üzerine kuruldu
         </p>
       </div>
 

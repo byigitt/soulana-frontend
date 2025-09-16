@@ -1,24 +1,33 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Solana Integration",
-  description: "Discover how Soulana utilizes Solana blockchain technology to enable fast, secure, and transparent charitable donations.",
-  keywords: ["solana blockchain", "crypto donation", "blockchain integration", "smart contracts", "web3 charity"],
+  title: "Solana Entegrasyonu",
+  description:
+    "Soulana'nın Solana blokzincirini nasıl kullandığını ve bağışları hızlı, güvenli ve şeffaf hale getirdiğini keşfedin.",
+  keywords: [
+    "solana blokzinciri",
+    "kripto bağış",
+    "blokzincir entegrasyonu",
+    "akıllı sözleşmeler",
+    "web3 bağış",
+  ],
   openGraph: {
-    title: "Solana Integration | Soulana",
-    description: "Discover how Soulana utilizes Solana blockchain technology to enable fast, secure, and transparent charitable donations.",
+    title: "Solana Entegrasyonu | Soulana",
+    description:
+      "Soulana'nın Solana blokzincirini nasıl kullandığını ve bağışları hızlı, güvenli ve şeffaf hale getirdiğini keşfedin.",
     images: [
       {
         url: "/images/og/solana-integration.jpg",
         width: 1200,
         height: 630,
-        alt: "Soulana - Solana Integration",
+        alt: "Soulana - Solana Entegrasyonu",
       },
     ],
   },
   twitter: {
-    title: "Solana Integration | Soulana",
-    description: "Discover how Soulana utilizes Solana blockchain technology to enable fast, secure, and transparent charitable donations.",
+    title: "Solana Entegrasyonu | Soulana",
+    description:
+      "Soulana'nın Solana blokzincirini nasıl kullandığını ve bağışları hızlı, güvenli ve şeffaf hale getirdiğini keşfedin.",
     images: ["/images/og/solana-integration.jpg"],
   },
 };
@@ -29,4 +38,4 @@ export default function SolanaIntegrationLayout({
   children: React.ReactNode;
 }) {
   return <>{children}</>;
-} 
+}

@@ -3,8 +3,8 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata = {
-  title: "Privacy Policy - Soulana",
-  description: "Our commitment to protecting your privacy and personal information.",
+  title: "Gizlilik Politikası - Soulana",
+  description: "Gizliliğinizi ve kişisel bilgilerinizi koruma taahhüdümüz.",
 };
 
 export const dynamic = "force-static";
@@ -16,58 +16,58 @@ export default function PrivacyPolicyPage() {
       <Navbar />
       <main className="container mx-auto px-4 py-20">
         <div className="max-w-3xl mx-auto mt-12">
-          <h1 className="text-4xl font-bold mb-8 text-red-950 dark:text-rose-50">Privacy Policy</h1>
+          <h1 className="text-4xl font-bold mb-8 text-red-950 dark:text-rose-50">Gizlilik Politikası</h1>
           
           <div className="prose dark:prose-invert max-w-none">
-            <p className="text-lg mb-6">Last updated: {new Date().toLocaleDateString()}</p>
+            <p className="text-lg mb-6">Son güncelleme: {new Date().toLocaleDateString("tr-TR")}</p>
             
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">1. Information We Collect</h2>
-              <p>We collect information that you provide directly to us, including:</p>
+              <h2 className="text-2xl font-semibold mb-4">1. Topladığımız Bilgiler</h2>
+              <p>Doğrudan bize sağladığınız aşağıdaki bilgileri topluyoruz:</p>
               <ul className="list-disc pl-6 mb-4">
-                <li>Contact information (name, email address)</li>
-                <li>Account information</li>
-                <li>Transaction data</li>
-                <li>Communication preferences</li>
+                <li>İletişim bilgileri (ad, e-posta adresi)</li>
+                <li>Hesap bilgileri</li>
+                <li>İşlem verileri</li>
+                <li>İletişim tercihleri</li>
               </ul>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">2. How We Use Your Information</h2>
-              <p>We use the information we collect to:</p>
+              <h2 className="text-2xl font-semibold mb-4">2. Bilgilerinizi Nasıl Kullanıyoruz</h2>
+              <p>Topladığımız bilgileri şu amaçlarla kullanıyoruz:</p>
               <ul className="list-disc pl-6 mb-4">
-                <li>Provide and maintain our services</li>
-                <li>Process your donations</li>
-                <li>Send you updates and notifications</li>
-                <li>Improve our platform</li>
+                <li>Hizmetlerimizi sunmak ve sürdürmek</li>
+                <li>Bağışlarınızı işlemek</li>
+                <li>Size güncellemeler ve bildirimler göndermek</li>
+                <li>Platformumuzu geliştirmek</li>
               </ul>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">3. Information Sharing</h2>
-              <p>We do not sell your personal information. We may share your information with:</p>
+              <h2 className="text-2xl font-semibold mb-4">3. Bilgi Paylaşımı</h2>
+              <p>Kişisel bilgilerinizi satmıyoruz. Bilgilerinizi şu taraflarla paylaşabiliriz:</p>
               <ul className="list-disc pl-6 mb-4">
-                <li>Service providers</li>
-                <li>Partner organizations (with your consent)</li>
-                <li>Legal authorities when required</li>
+                <li>Hizmet sağlayıcılar</li>
+                <li>İş ortakları (rızanızla)</li>
+                <li>Gerektiğinde yasal merciler</li>
               </ul>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">4. Your Rights</h2>
-              <p>You have the right to:</p>
+              <h2 className="text-2xl font-semibold mb-4">4. Haklarınız</h2>
+              <p>Şu haklara sahipsiniz:</p>
               <ul className="list-disc pl-6 mb-4">
-                <li>Access your personal information</li>
-                <li>Correct inaccurate data</li>
-                <li>Request deletion of your data</li>
-                <li>Opt-out of communications</li>
+                <li>Kişisel bilgilerinize erişmek</li>
+                <li>Hatalı verileri düzeltmek</li>
+                <li>Verilerinizin silinmesini talep etmek</li>
+                <li>İletişimlerden çıkmayı tercih etmek</li>
               </ul>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">5. Contact Us</h2>
-              <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-              <p>Email: privacy@soulana.org</p>
+              <h2 className="text-2xl font-semibold mb-4">5. Bize Ulaşın</h2>
+              <p>Bu Gizlilik Politikası hakkında sorularınız varsa lütfen bizimle iletişime geçin:</p>
+              <p>E-posta: privacy@soulana.org</p>
             </section>
           </div>
         </div>
@@ -75,4 +75,4 @@ export default function PrivacyPolicyPage() {
       <Footer />
     </div>
   );
-} 
+}

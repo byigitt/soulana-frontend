@@ -3,30 +3,39 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     template: "%s | Soulana",
-    default: "Our Mission",
+    default: "Misyonumuz",
   },
-  description: "Learn about our mission to revolutionize charitable giving through blockchain technology and create lasting global impact.",
-  keywords: ["mission", "vision", "values", "blockchain charity", "social impact"],
+  description:
+    "Blokzincir teknolojisiyle bağış kültürünü dönüştürme misyonumuzu ve kalıcı küresel etki yaratma vizyonumuzu keşfedin.",
+  keywords: [
+    "misyon",
+    "vizyon",
+    "değerler",
+    "blokzincir bağış",
+    "sosyal etki",
+  ],
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://cyberia-frontend.vercel.app/mission",
+    locale: "tr_TR",
+    url: "https://soulana.wiredium.com/mission",
     siteName: "Soulana",
-    title: "Our Mission | Soulana",
-    description: "Learn about our mission to revolutionize charitable giving through blockchain technology.",
+    title: "Misyonumuz | Soulana",
+    description:
+      "Blokzincir teknolojisiyle bağış kültürünü dönüştürme misyonumuzu keşfedin.",
     images: [
       {
         url: "/images/og/mission.jpg",
         width: 1200,
         height: 630,
-        alt: "Soulana - Our Mission",
+        alt: "Soulana - Misyonumuz",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Our Mission | Soulana",
-    description: "Learn about our mission to revolutionize charitable giving through blockchain technology.",
+    title: "Misyonumuz | Soulana",
+    description:
+      "Blokzincir teknolojisiyle bağış kültürünü dönüştürme misyonumuzu keşfedin.",
     images: ["/images/og/mission.jpg"],
     creator: "@Soulana",
   },
@@ -38,4 +47,4 @@ export default function MissionLayout({
   children: React.ReactNode;
 }) {
   return <>{children}</>;
-} 
+}

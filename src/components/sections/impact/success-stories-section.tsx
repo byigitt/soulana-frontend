@@ -5,25 +5,25 @@ import { ArrowRight } from "lucide-react";
 const stories = [
   {
     id: 1,
-    title: "Clean Water Initiative",
-    location: "East Africa",
-    impact: "10,000+ people served",
+    title: "Temiz Su Girişimi",
+    location: "Doğu Afrika",
+    impact: "10.000+ kişi faydalandı",
     amount: "$50,000",
     image: "/images/impact/clean-water.jpg"
   },
   {
     id: 2,
-    title: "Education for All",
-    location: "South Asia",
-    impact: "500 students supported",
+    title: "Herkes için Eğitim",
+    location: "Güney Asya",
+    impact: "500 öğrenci desteklendi",
     amount: "$75,000",
     image: "/images/impact/education-project.jpg"
   },
   {
     id: 3,
-    title: "Medical Aid Program",
-    location: "Latin America",
-    impact: "1,000+ patients treated",
+    title: "Tıbbi Destek Programı",
+    location: "Latin Amerika",
+    impact: "1.000+ hasta tedavi edildi",
     amount: "$100,000",
     image: "/images/impact/medical-aid.jpg"
   }
@@ -33,7 +33,7 @@ export const SuccessStoriesSection = () => {
   return (
     <section className="mt-32">
       <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50 text-center mb-16">
-        Success Stories
+        Başarı Hikayeleri
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {stories.map((story) => (
@@ -68,7 +68,7 @@ export const SuccessStoriesSection = () => {
                 type="button"
                 className="flex items-center gap-2 text-red-600 dark:text-red-400 hover:gap-3 transition-all duration-300"
               >
-                Read Full Story
+                Hikayenin tamamını oku
                 <ArrowRight className="w-4 h-4" />
               </button>
             </div>

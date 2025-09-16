@@ -3,8 +3,8 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata = {
-  title: "Accessibility - Soulana",
-  description: "Our commitment to making Soulana accessible to everyone.",
+  title: "Erişilebilirlik - Soulana",
+  description: "Soulana'yı herkes için erişilebilir kılma taahhüdümüz.",
 };
 
 export const dynamic = "force-static";
@@ -16,78 +16,78 @@ export default function AccessibilityPage() {
       <Navbar />
       <main className="container mx-auto px-4 py-20">
         <div className="max-w-3xl mx-auto mt-12">
-          <h1 className="text-4xl font-bold mb-8 text-red-950 dark:text-rose-50">Accessibility Statement</h1>
+          <h1 className="text-4xl font-bold mb-8 text-red-950 dark:text-rose-50">Erişilebilirlik Bildirimi</h1>
           
           <div className="prose dark:prose-invert max-w-none">
-            <p className="text-lg mb-6">Last updated: {new Date().toLocaleDateString()}</p>
+            <p className="text-lg mb-6">Son güncelleme: {new Date().toLocaleDateString("tr-TR")}</p>
             
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Our Commitment</h2>
+              <h2 className="text-2xl font-semibold mb-4">Taahhüdümüz</h2>
               <p>
-                Soulana is committed to ensuring digital accessibility for people with disabilities. 
-                We are continually improving the user experience for everyone and applying the relevant 
-                accessibility standards.
+                Soulana, engelli bireyler için dijital erişilebilirliği sağlamaya kendini adamıştır. 
+                Herkes için kullanıcı deneyimini sürekli olarak iyileştiriyor ve ilgili 
+                erişilebilirlik standartlarını uyguluyoruz.
               </p>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Conformance Status</h2>
-              <p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 level AA. These guidelines explain how to make web content more accessible for people with disabilities.</p>
+              <h2 className="text-2xl font-semibold mb-4">Uyumluluk Durumu</h2>
+              <p>Web İçeriği Erişilebilirlik Yönergeleri (WCAG) 2.1 AA seviyesine uyum sağlamayı hedefliyoruz. Bu yönergeler, web içeriklerini engelli kişiler için daha erişilebilir hale getirmenin yollarını açıklar.</p>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Accessibility Features</h2>
-              <p>Our website includes the following accessibility features:</p>
+              <h2 className="text-2xl font-semibold mb-4">Erişilebilirlik Özellikleri</h2>
+              <p>Web sitemiz aşağıdaki erişilebilirlik özelliklerini içerir:</p>
               <ul className="list-disc pl-6 mb-4">
-                <li>Keyboard navigation support</li>
-                <li>ARIA landmarks and labels</li>
-                <li>Alt text for images</li>
-                <li>Proper heading structure</li>
-                <li>Sufficient color contrast</li>
-                <li>Resizable text</li>
-                <li>Screen reader compatibility</li>
+                <li>Klavye ile gezinme desteği</li>
+                <li>ARIA işaretleri ve etiketleri</li>
+                <li>Görseller için alternatif metin</li>
+                <li>Doğru başlık yapısı</li>
+                <li>Yeterli renk kontrastı</li>
+                <li>Yeniden boyutlandırılabilir metin</li>
+                <li>Ekran okuyucu uyumluluğu</li>
               </ul>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Assistive Technologies</h2>
-              <p>Our website is designed to be compatible with the following assistive technologies:</p>
+              <h2 className="text-2xl font-semibold mb-4">Destekleyici Teknolojiler</h2>
+              <p>Web sitemiz aşağıdaki yardımcı teknolojilerle uyumlu olacak şekilde tasarlandı:</p>
               <ul className="list-disc pl-6 mb-4">
-                <li>Screen readers</li>
-                <li>Screen magnification software</li>
-                <li>Speech recognition software</li>
-                <li>Keyboard-only navigation</li>
+                <li>Ekran okuyucular</li>
+                <li>Ekran büyütme yazılımları</li>
+                <li>Ses tanıma yazılımları</li>
+                <li>Yalnızca klavye ile gezinme</li>
               </ul>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Known Issues</h2>
+              <h2 className="text-2xl font-semibold mb-4">Bilinen Sorunlar</h2>
               <p>
-                While we strive for WCAG 2.1 Level AA compliance, there may be some areas that need improvement. 
-                We are actively working to identify and resolve any accessibility issues.
+                WCAG 2.1 Seviye AA uyumluluğu için çabalasak da iyileştirilmesi gereken bazı alanlar olabilir. 
+                Herhangi bir erişilebilirlik sorununu belirlemek ve gidermek için aktif olarak çalışıyoruz.
               </p>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Feedback</h2>
+              <h2 className="text-2xl font-semibold mb-4">Geri Bildirim</h2>
               <p>
-                We welcome your feedback on the accessibility of Soulana. Please let us know if you 
-                encounter accessibility barriers:
+                Soulana'nın erişilebilirliği hakkında geri bildirimlerinizi memnuniyetle karşılarız. Erişim engeliyle karşılaşırsanız lütfen 
+                bize bildirin:
               </p>
               <ul className="list-disc pl-6 mb-4">
-                <li>Email: accessibility@soulana.org</li>
-                <li>Phone: (555) 123-4567</li>
+                <li>E-posta: accessibility@soulana.org</li>
+                <li>Telefon: (555) 123-4567</li>
               </ul>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Assessment Methods</h2>
-              <p>We assess the accessibility of Soulana through the following methods:</p>
+              <h2 className="text-2xl font-semibold mb-4">Değerlendirme Yöntemleri</h2>
+              <p>Soulana'nın erişilebilirliğini aşağıdaki yöntemlerle değerlendiriyoruz:</p>
               <ul className="list-disc pl-6 mb-4">
-                <li>External accessibility audits</li>
-                <li>Automated testing tools</li>
-                <li>User testing with assistive technologies</li>
-                <li>Regular manual testing</li>
+                <li>Harici erişilebilirlik denetimleri</li>
+                <li>Otomatik test araçları</li>
+                <li>Yardımcı teknolojilerle kullanıcı testleri</li>
+                <li>Düzenli manuel testler</li>
               </ul>
             </section>
           </div>
@@ -96,4 +96,4 @@ export default function AccessibilityPage() {
       <Footer />
     </div>
   );
-} 
+}

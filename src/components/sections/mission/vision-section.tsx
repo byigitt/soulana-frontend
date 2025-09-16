@@ -3,20 +3,21 @@ export const VisionSection = () => {
     <section className="mt-20">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-red-950 dark:text-rose-50 text-center mb-8">
-          Our Vision
+          Vizyonumuz
         </h2>
         <div className="space-y-6 text-lg text-red-800/80 dark:text-rose-100/80">
           <p>
-            We envision a world where charitable giving is seamless, transparent, and maximally impactful. By leveraging Solana&apos;s blockchain technology, we&apos;re building a future where every donation can be traced from donor to beneficiary, ensuring complete accountability and trust.
+            Bağış yapmanın sorunsuz, şeffaf ve en yüksek etkiyi sağladığı bir dünya hayal ediyoruz. Solana'nın blokzincir teknolojisinden yararlanarak bağışçıdan faydalanıcıya uzanan her bağışı izleyebildiğimiz, tam hesap verebilirlik ve güven sağlayan bir gelecek inşa ediyoruz.
           </p>
           <p>
-            Our platform eliminates traditional barriers to charitable giving, such as high transaction fees and slow processing times. With near-instant transactions and minimal fees, more of your donation goes directly to the causes you care about.
+            Platformumuz yüksek işlem ücretleri ve yavaş işlemler gibi geleneksel engelleri ortadan kaldırır. Neredeyse anlık işlemler ve minimum ücretlerle bağışlarınızın daha büyük bir kısmı önemsediğiniz projelere ulaşır.
           </p>
           <p>
-            We&apos;re committed to democratizing philanthropy, making it accessible to everyone regardless of their location or resources. Through blockchain technology, we&apos;re creating a more connected and compassionate world.
+            Hayırseverliği demokratikleştirmeye, konumu veya kaynakları ne olursa olsun herkes için erişilebilir kılmaya kararlıyız. Blokzincir teknolojisiyle daha bağlantılı ve şefkatli bir dünya kuruyoruz.
           </p>
         </div>
       </div>
     </section>
   );
-}; 
+};
+

@@ -30,10 +30,10 @@ export const CTASection = () => {
         {/* Content */}
         <div className="relative p-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50 mb-6">
-            Ready to Make a Difference?
+            Fark Yaratmaya Hazır mısınız?
           </h2>
           <p className="text-xl text-red-800/90 dark:text-rose-100/80 max-w-2xl mx-auto mb-8">
-            Start your donation journey today and help make the world a better place.
+            Bağış yolculuğuna bugün başlayın ve dünyayı daha iyi bir yer haline getirmeye yardımcı olun.
           </p>
           <div className="flex gap-4 justify-center">
             <Button 
@@ -41,7 +41,7 @@ export const CTASection = () => {
               className="bg-red-600 hover:bg-red-500 text-white dark:bg-red-500 dark:text-white dark:hover:bg-red-400 hover:scale-105 transition-all duration-300 group shadow-lg hover:shadow-xl"
               onClick={() => router.push('/donate')}
             >
-              Start Donating
+              Bağış Yapmaya Başla
               <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Button>
             <Button 
@@ -50,7 +50,7 @@ export const CTASection = () => {
               className="border-red-600 text-red-600 hover:bg-red-50 dark:border-red-500 dark:text-rose-50 dark:hover:bg-red-500/10 hover:scale-105 transition-all duration-300"
               onClick={() => router.push('/how-it-works/donation-process')}
             >
-              Learn More
+              Daha Fazla Bilgi Al
             </Button>
           </div>
         </div>

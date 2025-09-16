@@ -3,30 +3,40 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     template: "%s | Soulana",
-    default: "How It Works",
+    default: "Nasıl Çalışır",
   },
-  description: "Learn how Soulana leverages blockchain technology to revolutionize charitable giving with transparency and efficiency.",
-  keywords: ["blockchain", "charity", "donation", "solana", "transparency", "security"],
+  description:
+    "Soulana'nın blokzincir teknolojisini kullanarak bağış deneyimini nasıl şeffaf ve verimli hale getirdiğini öğrenin.",
+  keywords: [
+    "blokzincir",
+    "bağış",
+    "solana",
+    "şeffaflık",
+    "güvenlik",
+    "bağış süreci",
+  ],
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://cyberia-frontend.vercel.app/how-it-works",
+    locale: "tr_TR",
+    url: "https://soulana.wiredium.com/how-it-works",
     siteName: "Soulana",
-    title: "How It Works | Soulana",
-    description: "Learn how Soulana leverages blockchain technology to revolutionize charitable giving.",
+    title: "Nasıl Çalışır | Soulana",
+    description:
+      "Soulana'nın blokzincir teknolojisini kullanarak bağış deneyimini nasıl dönüştürdüğünü öğrenin.",
     images: [
       {
         url: "/images/og/how-it-works.jpg",
         width: 1200,
         height: 630,
-        alt: "Soulana - How It Works",
+        alt: "Soulana - Nasıl Çalışır",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "How It Works | Soulana",
-    description: "Learn how Soulana leverages blockchain technology to revolutionize charitable giving.",
+    title: "Nasıl Çalışır | Soulana",
+    description:
+      "Soulana'nın blokzincir teknolojisini kullanarak bağış deneyimini nasıl dönüştürdüğünü öğrenin.",
     images: ["/images/og/how-it-works.jpg"],
     creator: "@Soulana",
   },
@@ -38,4 +48,4 @@ export default function HowItWorksLayout({
   children: React.ReactNode;
 }) {
   return <>{children}</>;
-} 
+}

@@ -61,13 +61,13 @@ export const TransactionTracker = () => {
       transition={{ duration: 0.5 }}
     >
       <h3 className="text-xl font-semibold text-red-950 dark:text-rose-50 mb-4">
-        Recent Donations
+        Son Bağışlar
       </h3>
       
       <div className="space-y-4">
         {transactions.length === 0 ? (
           <p className="text-center text-red-800/60 dark:text-rose-100/60 py-8">
-            No recent transactions found
+            Son işlem bulunamadı
           </p>
         ) : (
           <AnimatePresence mode="popLayout">
@@ -87,12 +87,12 @@ export const TransactionTracker = () => {
                   {tx.status === 'started' ? (
                     <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400">
                       <Loader2 className="h-4 w-4 animate-spin" />
-                      <span className="text-sm">Starting</span>
+                      <span className="text-sm">Başlatılıyor</span>
                     </div>
                   ) : tx.status === 'pending' ? (
                     <div className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400">
                       <Loader2 className="h-4 w-4 animate-spin" />
-                      <span className="text-sm">Pending</span>
+                      <span className="text-sm">Beklemede</span>
                     </div>
                   ) : tx.status === 'completed' ? (
                     <Link
@@ -101,24 +101,24 @@ export const TransactionTracker = () => {
                       rel="noopener noreferrer"
                       className="text-green-600 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300 flex items-center gap-1"
                     >
-                      <span className="text-sm">View</span>
+                      <span className="text-sm">Görüntüle</span>
                       <ExternalLink className="h-4 w-4" />
                     </Link>
                   ) : tx.status === 'failed' ? (
                     <div className="flex items-center gap-2 text-red-600 dark:text-red-400">
-                      <span className="text-sm">Failed</span>
+                      <span className="text-sm">Başarısız</span>
                     </div>
                   ) : (
                     <div className="flex items-center gap-2 text-red-600 dark:text-red-400">
-                      <span className="text-sm">Unknown</span>
+                      <span className="text-sm">Bilinmiyor</span>
                     </div>
                   )}
                 </div>
                 
                 <div className="text-sm text-red-800/60 dark:text-rose-100/60">
-                  <p>Project: {tx.projectTitle}</p>
-                  <p>From: {tx.fromAddress.slice(0, 4)}...{tx.fromAddress.slice(-4)}</p>
-                  <p>Time: {tx.timestamp.toLocaleString()}</p>
+                  <p>Proje: {tx.projectTitle}</p>
+                  <p>Gönderen: {tx.fromAddress.slice(0, 4)}...{tx.fromAddress.slice(-4)}</p>
+                  <p>Zaman: {tx.timestamp.toLocaleString()}</p>
                 </div>
               </motion.div>
             ))}
@@ -128,3 +128,4 @@ export const TransactionTracker = () => {
     </motion.div>
   );
 }; 
+

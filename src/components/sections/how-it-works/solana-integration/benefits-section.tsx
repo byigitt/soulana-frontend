@@ -4,23 +4,23 @@ import { Zap, DollarSign, Shield, Clock } from "lucide-react";
 const benefits = [
   {
     icon: Zap,
-    title: "Lightning Fast",
-    description: "Process donations in under a second with Solana's high-performance blockchain."
+    title: "Şimşek Hızında",
+    description: "Solana'nın yüksek performanslı blokzinciriyle bağışları bir saniyeden kısa sürede işle."
   },
   {
     icon: DollarSign,
-    title: "Minimal Fees",
-    description: "Enjoy near-zero transaction costs, ensuring maximum impact for every donation."
+    title: "Minimum Ücretler",
+    description: "Neredeyse sıfır işlem maliyetiyle her bağışın etkisini en üst düzeye çıkar."
   },
   {
     icon: Shield,
-    title: "Enhanced Security",
-    description: "Benefit from enterprise-grade security and transparent transaction tracking."
+    title: "Geliştirilmiş Güvenlik",
+    description: "Kurumsal düzeyde güvenlikten ve şeffaf işlem takibinden yararlan."
   },
   {
     icon: Clock,
-    title: "Real-time Processing",
-    description: "Experience instant confirmation and immediate fund disbursement."
+    title: "Anlık İşleme",
+    description: "Anında onay ve eş zamanlı fon aktarımı deneyimle."
   }
 ];
 
@@ -28,7 +28,7 @@ export const BenefitsSection = () => {
   return (
     <section className="mt-20">
       <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50 text-center mb-12">
-        Why We Chose Solana
+        Neden Solana'yı Seçtik
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {benefits.map((benefit) => (
