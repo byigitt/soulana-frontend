@@ -7,7 +7,7 @@ export const HeroSection = () => {
         Solana Entegrasyonu
       </h1>
       <p className="text-xl text-red-800/80 dark:text-rose-100/80 max-w-2xl">
-        Solana'nın yüksek performanslı blokzincirini kullanarak hayır bağışlarını ışık hızında, güvenli ve maliyet etkin hale getiriyoruz.
+        Solana&apos;nın yüksek performanslı blokzincirini kullanarak hayır bağışlarını ışık hızında, güvenli ve maliyet etkin hale getiriyoruz.
       </p>
     </div>
   );

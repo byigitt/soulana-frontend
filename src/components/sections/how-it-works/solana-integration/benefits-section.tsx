@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: Zap,
     title: "Şimşek Hızında",
-    description: "Solana'nın yüksek performanslı blokzinciriyle bağışları bir saniyeden kısa sürede işle."
+    description: "Solana&apos;nın yüksek performanslı blokzinciriyle bağışları bir saniyeden kısa sürede işle."
   },
   {
     icon: DollarSign,
@@ -28,7 +28,7 @@ export const BenefitsSection = () => {
   return (
     <section className="mt-20">
       <h2 className="text-3xl sm:text-4xl font-bold text-red-950 dark:text-rose-50 text-center mb-12">
-        Neden Solana'yı Seçtik
+        Neden Solana&apos;yı Seçtik
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {benefits.map((benefit) => (

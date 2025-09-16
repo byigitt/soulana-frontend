@@ -24,7 +24,7 @@ export default function TermsOfServicePage() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">1. Koşulların Kabulü</h2>
               <p className="mb-4">
-                Soulana'nın hizmetlerine erişerek ve kullanarak bu Hizmet Koşullarına uymayı ve bağlı kalmayı kabul edersiniz.
+                Soulana&apos;nın hizmetlerine erişerek ve kullanarak bu Hizmet Koşullarına uymayı ve bağlı kalmayı kabul edersiniz.
               </p>
             </section>
 
@@ -62,7 +62,7 @@ export default function TermsOfServicePage() {
 
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">5. Fikri Mülkiyet</h2>
-              <p>Hizmetimizin tüm içerikleri, özellikleri ve işlevleri Soulana'ya aittir ve uluslararası telif hakkı, marka ve diğer fikri mülkiyet yasalarıyla korunmaktadır.</p>
+              <p>Hizmetimizin tüm içerikleri, özellikleri ve işlevleri Soulana&apos;ya aittir ve uluslararası telif hakkı, marka ve diğer fikri mülkiyet yasalarıyla korunmaktadır.</p>
             </section>
 
             <section className="mb-8">

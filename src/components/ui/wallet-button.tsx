@@ -1,10 +1,15 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { Wallet } from "lucide-react";
 import { useWallet } from "@/contexts/wallet-context";
 
-export function WalletButton() {
+type WalletButtonProps = {
+  className?: string;
+};
+
+export function WalletButton({ className }: WalletButtonProps) {
   const { isConnected, walletAddress, connectWallet, disconnectWallet } = useWallet();
 
   const handleClick = () => {
@@ -18,7 +23,7 @@ export function WalletButton() {
   return (
     <Button
       onClick={handleClick}
-      className="bg-red-600 hover:bg-red-700 text-white"
+      className={cn("bg-red-600 hover:bg-red-700 text-white", className)}
     >
       <Wallet className="mr-2 h-4 w-4" />
       {isConnected

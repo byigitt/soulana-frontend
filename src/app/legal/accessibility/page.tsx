@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer";
 
 export const metadata = {
   title: "Erişilebilirlik - Soulana",
-  description: "Soulana'yı herkes için erişilebilir kılma taahhüdümüz.",
+  description: "Soulana&apos;yı herkes için erişilebilir kılma taahhüdümüz.",
 };
 
 export const dynamic = "force-static";
@@ -71,7 +71,7 @@ export default function AccessibilityPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Geri Bildirim</h2>
               <p>
-                Soulana'nın erişilebilirliği hakkında geri bildirimlerinizi memnuniyetle karşılarız. Erişim engeliyle karşılaşırsanız lütfen 
+                Soulana&apos;nın erişilebilirliği hakkında geri bildirimlerinizi memnuniyetle karşılarız. Erişim engeliyle karşılaşırsanız lütfen 
                 bize bildirin:
               </p>
               <ul className="list-disc pl-6 mb-4">
@@ -82,7 +82,7 @@ export default function AccessibilityPage() {
 
             <section className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">Değerlendirme Yöntemleri</h2>
-              <p>Soulana'nın erişilebilirliğini aşağıdaki yöntemlerle değerlendiriyoruz:</p>
+              <p>Soulana&apos;nın erişilebilirliğini aşağıdaki yöntemlerle değerlendiriyoruz:</p>
               <ul className="list-disc pl-6 mb-4">
                 <li>Harici erişilebilirlik denetimleri</li>
                 <li>Otomatik test araçları</li>

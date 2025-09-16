@@ -7,7 +7,7 @@ export const VisionSection = () => {
         </h2>
         <div className="space-y-6 text-lg text-red-800/80 dark:text-rose-100/80">
           <p>
-            Bağış yapmanın sorunsuz, şeffaf ve en yüksek etkiyi sağladığı bir dünya hayal ediyoruz. Solana'nın blokzincir teknolojisinden yararlanarak bağışçıdan faydalanıcıya uzanan her bağışı izleyebildiğimiz, tam hesap verebilirlik ve güven sağlayan bir gelecek inşa ediyoruz.
+            Bağış yapmanın sorunsuz, şeffaf ve en yüksek etkiyi sağladığı bir dünya hayal ediyoruz. Solana&apos;nın blokzincir teknolojisinden yararlanarak bağışçıdan faydalanıcıya uzanan her bağışı izleyebildiğimiz, tam hesap verebilirlik ve güven sağlayan bir gelecek inşa ediyoruz.
           </p>
           <p>
             Platformumuz yüksek işlem ücretleri ve yavaş işlemler gibi geleneksel engelleri ortadan kaldırır. Neredeyse anlık işlemler ve minimum ücretlerle bağışlarınızın daha büyük bir kısmı önemsediğiniz projelere ulaşır.

@@ -27,12 +27,12 @@ const faqs: FAQItem[] = [
   {
     id: "token-what",
     question: "Soulana Token nedir?",
-    answer: "Soulana Token (CCT), bağışçılara hayırsever katkıları için ödül veren bir yönetişim ve hizmet tokenıdır. Platformumuz üzerinden bağış yaptığınızda, bağış tutarınızın %1'i değerinde tokenı otomatik olarak alırsınız."
+    answer: "Soulana Token (CCT), bağışçılara hayırsever katkıları için ödül veren bir yönetişim ve hizmet tokenıdır. Platformumuz üzerinden bağış yaptığınızda, bağış tutarınızın %1&apos;i değerinde tokenı otomatik olarak alırsınız."
   },
   {
     id: "token-earn",
     question: "Tokenları nasıl kazanırım?",
-    answer: "Platformumuz üzerinden bağış yaptığınızda tokenları otomatik olarak kazanırsınız. Yaptığınız her bağış için bağış tutarınızın %1'i değerinde token alırsınız. Örneğin 100$ bağış yaparsanız, 1$ değerinde CCT token kazanırsınız."
+    answer: "Platformumuz üzerinden bağış yaptığınızda tokenları otomatik olarak kazanırsınız. Yaptığınız her bağış için bağış tutarınızın %1&apos;i değerinde token alırsınız. Örneğin 100$ bağış yaparsanız, 1$ değerinde CCT token kazanırsınız."
   },
   {
     id: "token-use",
@@ -42,7 +42,7 @@ const faqs: FAQItem[] = [
   {
     id: "token-calculation",
     question: "Token ödülleri nasıl hesaplanır?",
-    answer: "Token ödülleri, işlemin yapıldığı andaki bağışınızın USD değerine göre hesaplanır. Bağış tutarınızın %1'i kadar tokenı, geçerli token fiyatı üzerinden alırsınız."
+    answer: "Token ödülleri, işlemin yapıldığı andaki bağışınızın USD değerine göre hesaplanır. Bağış tutarınızın %1&apos;i kadar tokenı, geçerli token fiyatı üzerinden alırsınız."
   },
   {
     id: "token-receive",
@@ -57,7 +57,7 @@ const faqs: FAQItem[] = [
   {
     id: "token-minimum",
     question: "Token kazanmak için minimum bağış var mı?",
-    answer: "Token kazanmak için herhangi bir minimum bağış tutarı yoktur. Bağışınızın tutarı ne olursa olsun, bağışınızın %1'i kadar token alırsınız."
+    answer: "Token kazanmak için herhangi bir minimum bağış tutarı yoktur. Bağışınızın tutarı ne olursa olsun, bağışınızın %1&apos;i kadar token alırsınız."
   },
   {
     id: "token-disconnect",
@@ -192,7 +192,7 @@ export default function TokenRewardsPage() {
                     </div>
                     <h3 className="text-lg font-semibold mb-2 text-red-950 dark:text-rose-50">Token Kazanın</h3>
                     <p className="text-red-800/60 dark:text-rose-100/60">
-                      Bağış tutarınızın %1'ini otomatik olarak token olarak alın
+                      Bağış tutarınızın %1&apos;ini otomatik olarak token olarak alın
                     </p>
                   </div>
 
