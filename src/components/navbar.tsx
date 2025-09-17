@@ -6,7 +6,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   ChevronDown,
-  Home,
   Users,
   Heart,
   PiggyBank,
